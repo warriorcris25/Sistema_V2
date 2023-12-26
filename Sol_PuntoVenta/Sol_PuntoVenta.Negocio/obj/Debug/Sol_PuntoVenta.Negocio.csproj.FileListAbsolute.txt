@@ -1,0 +1,11 @@
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Negocio\bin\Debug\Sol_PuntoVenta.Negocio.dll
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Negocio\bin\Debug\Sol_PuntoVenta.Negocio.pdb
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Negocio\bin\Debug\Sol_PuntoVenta.Datos.dll
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Negocio\bin\Debug\Sol_PuntoVenta.Entidades.dll
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Negocio\bin\Debug\Sol_PuntoVenta.Datos.pdb
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Negocio\bin\Debug\Sol_PuntoVenta.Entidades.pdb
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Negocio\obj\Debug\Sol_PuntoVenta.Negocio.csproj.AssemblyReference.cache
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Negocio\obj\Debug\Sol_PuntoVenta.Negocio.csproj.CoreCompileInputs.cache
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Negocio\obj\Debug\Sol_PuntoVenta.Negocio.csproj.CopyComplete
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Negocio\obj\Debug\Sol_PuntoVenta.Negocio.dll
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Negocio\obj\Debug\Sol_PuntoVenta.Negocio.pdb

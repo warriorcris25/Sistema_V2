@@ -1,0 +1,6 @@
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Entidades\bin\Debug\Sol_PuntoVenta.Entidades.dll
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Entidades\bin\Debug\Sol_PuntoVenta.Entidades.pdb
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Entidades\obj\Debug\Sol_PuntoVenta.Entidades.csproj.AssemblyReference.cache
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Entidades\obj\Debug\Sol_PuntoVenta.Entidades.csproj.CoreCompileInputs.cache
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Entidades\obj\Debug\Sol_PuntoVenta.Entidades.dll
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Entidades\obj\Debug\Sol_PuntoVenta.Entidades.pdb
