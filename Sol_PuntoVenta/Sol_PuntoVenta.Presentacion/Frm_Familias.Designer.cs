@@ -32,26 +32,30 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Familias));
             this.Tbc_principal = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.Dgv_listado = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Txt_Buscar = new System.Windows.Forms.TextBox();
             this.Btn_Buscar = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Txt_Descripcion = new System.Windows.Forms.TextBox();
-            this.Btn_Cancelar = new System.Windows.Forms.Button();
-            this.Btn_Guardar = new System.Windows.Forms.Button();
+            this.Txt_Buscar = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Dgv_listado = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.Btn_Retornar = new System.Windows.Forms.Button();
+            this.Btn_Guardar = new System.Windows.Forms.Button();
+            this.Btn_Cancelar = new System.Windows.Forms.Button();
+            this.Txt_Descripcion = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.Btn_Nuevo = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.Btn_Actualizar = new System.Windows.Forms.Button();
             this.Btn_Eliminar = new System.Windows.Forms.Button();
             this.Btn_Reporte = new System.Windows.Forms.Button();
             this.Btn_Salir = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.Pnl_titulo_form = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Lbl_totalregistros = new System.Windows.Forms.Label();
             this.Tbc_principal.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_listado)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            this.Pnl_titulo_form.SuspendLayout();
             this.SuspendLayout();
             // 
             // Tbc_principal
@@ -67,6 +71,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.Lbl_totalregistros);
             this.tabPage1.Controls.Add(this.Btn_Buscar);
             this.tabPage1.Controls.Add(this.Txt_Buscar);
             this.tabPage1.Controls.Add(this.label1);
@@ -78,6 +83,44 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Consultas";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // Btn_Buscar
+            // 
+            this.Btn_Buscar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.Btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Buscar.ForeColor = System.Drawing.Color.White;
+            this.Btn_Buscar.Location = new System.Drawing.Point(377, 50);
+            this.Btn_Buscar.Name = "Btn_Buscar";
+            this.Btn_Buscar.Size = new System.Drawing.Size(100, 34);
+            this.Btn_Buscar.TabIndex = 3;
+            this.Btn_Buscar.Text = "Buscar";
+            this.Btn_Buscar.UseVisualStyleBackColor = false;
+            // 
+            // Txt_Buscar
+            // 
+            this.Txt_Buscar.Location = new System.Drawing.Point(81, 55);
+            this.Txt_Buscar.Name = "Txt_Buscar";
+            this.Txt_Buscar.Size = new System.Drawing.Size(267, 22);
+            this.Txt_Buscar.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(31, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Buscar";
+            // 
+            // Dgv_listado
+            // 
+            this.Dgv_listado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_listado.Location = new System.Drawing.Point(29, 99);
+            this.Dgv_listado.Name = "Dgv_listado";
+            this.Dgv_listado.RowHeadersWidth = 51;
+            this.Dgv_listado.RowTemplate.Height = 24;
+            this.Dgv_listado.Size = new System.Drawing.Size(965, 464);
+            this.Dgv_listado.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -94,84 +137,58 @@
             this.tabPage2.Text = "Mantenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // Dgv_listado
+            // Btn_Retornar
             // 
-            this.Dgv_listado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_listado.Location = new System.Drawing.Point(29, 99);
-            this.Dgv_listado.Name = "Dgv_listado";
-            this.Dgv_listado.RowHeadersWidth = 51;
-            this.Dgv_listado.RowTemplate.Height = 24;
-            this.Dgv_listado.Size = new System.Drawing.Size(965, 464);
-            this.Dgv_listado.TabIndex = 0;
+            this.Btn_Retornar.BackColor = System.Drawing.Color.ForestGreen;
+            this.Btn_Retornar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Retornar.ForeColor = System.Drawing.Color.White;
+            this.Btn_Retornar.Location = new System.Drawing.Point(332, 143);
+            this.Btn_Retornar.Name = "Btn_Retornar";
+            this.Btn_Retornar.Size = new System.Drawing.Size(100, 34);
+            this.Btn_Retornar.TabIndex = 6;
+            this.Btn_Retornar.Text = "Retornar";
+            this.Btn_Retornar.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // Btn_Guardar
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 61);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Buscar";
+            this.Btn_Guardar.BackColor = System.Drawing.Color.Blue;
+            this.Btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Guardar.ForeColor = System.Drawing.Color.White;
+            this.Btn_Guardar.Location = new System.Drawing.Point(227, 142);
+            this.Btn_Guardar.Name = "Btn_Guardar";
+            this.Btn_Guardar.Size = new System.Drawing.Size(100, 34);
+            this.Btn_Guardar.TabIndex = 5;
+            this.Btn_Guardar.Text = "Guardar";
+            this.Btn_Guardar.UseVisualStyleBackColor = false;
             // 
-            // Txt_Buscar
+            // Btn_Cancelar
             // 
-            this.Txt_Buscar.Location = new System.Drawing.Point(81, 55);
-            this.Txt_Buscar.Name = "Txt_Buscar";
-            this.Txt_Buscar.Size = new System.Drawing.Size(267, 22);
-            this.Txt_Buscar.TabIndex = 2;
+            this.Btn_Cancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Btn_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Cancelar.ForeColor = System.Drawing.Color.White;
+            this.Btn_Cancelar.Location = new System.Drawing.Point(121, 143);
+            this.Btn_Cancelar.Name = "Btn_Cancelar";
+            this.Btn_Cancelar.Size = new System.Drawing.Size(100, 34);
+            this.Btn_Cancelar.TabIndex = 4;
+            this.Btn_Cancelar.Text = "Cancelar";
+            this.Btn_Cancelar.UseVisualStyleBackColor = false;
             // 
-            // Btn_Buscar
+            // Txt_Descripcion
             // 
-            this.Btn_Buscar.Location = new System.Drawing.Point(377, 50);
-            this.Btn_Buscar.Name = "Btn_Buscar";
-            this.Btn_Buscar.Size = new System.Drawing.Size(100, 34);
-            this.Btn_Buscar.TabIndex = 3;
-            this.Btn_Buscar.Text = "Buscar";
-            this.Btn_Buscar.UseVisualStyleBackColor = true;
+            this.Txt_Descripcion.Location = new System.Drawing.Point(115, 105);
+            this.Txt_Descripcion.Name = "Txt_Descripcion";
+            this.Txt_Descripcion.Size = new System.Drawing.Size(351, 22);
+            this.Txt_Descripcion.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(41, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 16);
+            this.label2.Size = new System.Drawing.Size(70, 16);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Familia:";
+            this.label2.Text = "Familia: (*)";
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // Txt_Descripcion
-            // 
-            this.Txt_Descripcion.Location = new System.Drawing.Point(100, 107);
-            this.Txt_Descripcion.Name = "Txt_Descripcion";
-            this.Txt_Descripcion.Size = new System.Drawing.Size(351, 22);
-            this.Txt_Descripcion.TabIndex = 1;
-            // 
-            // Btn_Cancelar
-            // 
-            this.Btn_Cancelar.Location = new System.Drawing.Point(104, 148);
-            this.Btn_Cancelar.Name = "Btn_Cancelar";
-            this.Btn_Cancelar.Size = new System.Drawing.Size(100, 34);
-            this.Btn_Cancelar.TabIndex = 4;
-            this.Btn_Cancelar.Text = "Cancelar";
-            this.Btn_Cancelar.UseVisualStyleBackColor = true;
-            // 
-            // Btn_Guardar
-            // 
-            this.Btn_Guardar.Location = new System.Drawing.Point(210, 147);
-            this.Btn_Guardar.Name = "Btn_Guardar";
-            this.Btn_Guardar.Size = new System.Drawing.Size(100, 34);
-            this.Btn_Guardar.TabIndex = 5;
-            this.Btn_Guardar.Text = "Guardar";
-            this.Btn_Guardar.UseVisualStyleBackColor = true;
-            // 
-            // Btn_Retornar
-            // 
-            this.Btn_Retornar.Location = new System.Drawing.Point(315, 148);
-            this.Btn_Retornar.Name = "Btn_Retornar";
-            this.Btn_Retornar.Size = new System.Drawing.Size(100, 34);
-            this.Btn_Retornar.TabIndex = 6;
-            this.Btn_Retornar.Text = "Retornar";
-            this.Btn_Retornar.UseVisualStyleBackColor = true;
             // 
             // Btn_Nuevo
             // 
@@ -189,6 +206,16 @@
             this.Btn_Nuevo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_Nuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Btn_Nuevo.UseVisualStyleBackColor = false;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "nuevo.png");
+            this.imageList1.Images.SetKeyName(1, "actualizar.png");
+            this.imageList1.Images.SetKeyName(2, "eliminar.png");
+            this.imageList1.Images.SetKeyName(3, "reporte.png");
+            this.imageList1.Images.SetKeyName(4, "salir.png");
             // 
             // Btn_Actualizar
             // 
@@ -258,21 +285,43 @@
             this.Btn_Salir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Btn_Salir.UseVisualStyleBackColor = false;
             // 
-            // imageList1
+            // Pnl_titulo_form
             // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "nuevo.png");
-            this.imageList1.Images.SetKeyName(1, "actualizar.png");
-            this.imageList1.Images.SetKeyName(2, "eliminar.png");
-            this.imageList1.Images.SetKeyName(3, "reporte.png");
-            this.imageList1.Images.SetKeyName(4, "salir.png");
+            this.Pnl_titulo_form.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(145)))), ((int)(((byte)(194)))));
+            this.Pnl_titulo_form.Controls.Add(this.label3);
+            this.Pnl_titulo_form.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Pnl_titulo_form.Location = new System.Drawing.Point(0, 0);
+            this.Pnl_titulo_form.Name = "Pnl_titulo_form";
+            this.Pnl_titulo_form.Size = new System.Drawing.Size(1467, 64);
+            this.Pnl_titulo_form.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.Location = new System.Drawing.Point(42, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 18);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Familias ";
+            // 
+            // Lbl_totalregistros
+            // 
+            this.Lbl_totalregistros.AutoSize = true;
+            this.Lbl_totalregistros.Location = new System.Drawing.Point(854, 580);
+            this.Lbl_totalregistros.Name = "Lbl_totalregistros";
+            this.Lbl_totalregistros.Size = new System.Drawing.Size(112, 16);
+            this.Lbl_totalregistros.TabIndex = 4;
+            this.Lbl_totalregistros.Text = "Total Registros: 0";
+            this.Lbl_totalregistros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Frm_Familias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1467, 836);
+            this.Controls.Add(this.Pnl_titulo_form);
             this.Controls.Add(this.Btn_Salir);
             this.Controls.Add(this.Btn_Reporte);
             this.Controls.Add(this.Btn_Eliminar);
@@ -282,12 +331,15 @@
             this.Name = "Frm_Familias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Familias";
+            this.Load += new System.EventHandler(this.Frm_Familias_Load);
             this.Tbc_principal.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_listado)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_listado)).EndInit();
+            this.Pnl_titulo_form.ResumeLayout(false);
+            this.Pnl_titulo_form.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -312,5 +364,8 @@
         private System.Windows.Forms.Button Btn_Reporte;
         private System.Windows.Forms.Button Btn_Salir;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Panel Pnl_titulo_form;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label Lbl_totalregistros;
     }
 }

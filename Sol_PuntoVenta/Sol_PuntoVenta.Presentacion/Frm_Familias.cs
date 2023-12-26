@@ -21,5 +21,10 @@ namespace Sol_PuntoVenta.Presentacion
         {
 
         }
+
+        private void Frm_Familias_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
