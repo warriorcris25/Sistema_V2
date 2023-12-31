@@ -29,45 +29,46 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Punto_Venta));
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.Tbc_principal = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.Dgv_Listado = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Txt_Buscar = new System.Windows.Forms.TextBox();
+            this.Lbl_totalregistros = new System.Windows.Forms.Label();
             this.Btn_Buscar = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Txt_Descripcion = new System.Windows.Forms.TextBox();
-            this.Btn_Cancelar = new System.Windows.Forms.Button();
-            this.Btn_Guardar = new System.Windows.Forms.Button();
+            this.Txt_Buscar = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Dgv_Listado = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.Btn_Retornar = new System.Windows.Forms.Button();
+            this.Btn_Guardar = new System.Windows.Forms.Button();
+            this.Btn_Cancelar = new System.Windows.Forms.Button();
+            this.Txt_Descripcion = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.Btn_Nuevo = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.Btn_Actualizar = new System.Windows.Forms.Button();
             this.Btn_Eliminar = new System.Windows.Forms.Button();
             this.Btn_Reporte = new System.Windows.Forms.Button();
             this.Btn_Salir = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.Pnl_titulo_form = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.Lbl_totalregistros = new System.Windows.Forms.Label();
-            this.tabControl1.SuspendLayout();
+            this.Tbc_principal.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Listado)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.Pnl_titulo_form.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // Tbc_principal
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.ItemSize = new System.Drawing.Size(100, 30);
-            this.tabControl1.Location = new System.Drawing.Point(12, 66);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1360, 700);
-            this.tabControl1.TabIndex = 0;
+            this.Tbc_principal.Controls.Add(this.tabPage1);
+            this.Tbc_principal.Controls.Add(this.tabPage2);
+            this.Tbc_principal.ItemSize = new System.Drawing.Size(100, 30);
+            this.Tbc_principal.Location = new System.Drawing.Point(12, 66);
+            this.Tbc_principal.Name = "Tbc_principal";
+            this.Tbc_principal.SelectedIndex = 0;
+            this.Tbc_principal.Size = new System.Drawing.Size(1360, 700);
+            this.Tbc_principal.TabIndex = 0;
             // 
             // tabPage1
             // 
@@ -84,6 +85,72 @@
             this.tabPage1.Text = "Consultas";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // Lbl_totalregistros
+            // 
+            this.Lbl_totalregistros.AutoSize = true;
+            this.Lbl_totalregistros.Location = new System.Drawing.Point(811, 592);
+            this.Lbl_totalregistros.Name = "Lbl_totalregistros";
+            this.Lbl_totalregistros.Size = new System.Drawing.Size(112, 16);
+            this.Lbl_totalregistros.TabIndex = 4;
+            this.Lbl_totalregistros.Text = "Total Registros: 0";
+            this.Lbl_totalregistros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // Btn_Buscar
+            // 
+            this.Btn_Buscar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.Btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Buscar.ForeColor = System.Drawing.Color.White;
+            this.Btn_Buscar.Location = new System.Drawing.Point(427, 57);
+            this.Btn_Buscar.Name = "Btn_Buscar";
+            this.Btn_Buscar.Size = new System.Drawing.Size(100, 34);
+            this.Btn_Buscar.TabIndex = 3;
+            this.Btn_Buscar.Text = "Buscar";
+            this.Btn_Buscar.UseVisualStyleBackColor = false;
+            // 
+            // Txt_Buscar
+            // 
+            this.Txt_Buscar.Location = new System.Drawing.Point(76, 66);
+            this.Txt_Buscar.Name = "Txt_Buscar";
+            this.Txt_Buscar.Size = new System.Drawing.Size(348, 22);
+            this.Txt_Buscar.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(23, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Buscar :";
+            // 
+            // Dgv_Listado
+            // 
+            this.Dgv_Listado.AllowUserToAddRows = false;
+            this.Dgv_Listado.AllowUserToDeleteRows = false;
+            this.Dgv_Listado.AllowUserToOrderColumns = true;
+            this.Dgv_Listado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Dgv_Listado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(145)))), ((int)(((byte)(194)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv_Listado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.Dgv_Listado.ColumnHeadersHeight = 35;
+            this.Dgv_Listado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.Dgv_Listado.EnableHeadersVisualStyles = false;
+            this.Dgv_Listado.Location = new System.Drawing.Point(20, 110);
+            this.Dgv_Listado.Name = "Dgv_Listado";
+            this.Dgv_Listado.ReadOnly = true;
+            this.Dgv_Listado.RowHeadersWidth = 51;
+            this.Dgv_Listado.RowTemplate.Height = 24;
+            this.Dgv_Listado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.Dgv_Listado.Size = new System.Drawing.Size(931, 461);
+            this.Dgv_Listado.TabIndex = 0;
+            this.Dgv_Listado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_Listado_CellDoubleClick);
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.Btn_Retornar);
@@ -99,71 +166,19 @@
             this.tabPage2.Text = "Mantenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // Dgv_Listado
+            // Btn_Retornar
             // 
-            this.Dgv_Listado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_Listado.Location = new System.Drawing.Point(20, 110);
-            this.Dgv_Listado.Name = "Dgv_Listado";
-            this.Dgv_Listado.RowHeadersWidth = 51;
-            this.Dgv_Listado.RowTemplate.Height = 24;
-            this.Dgv_Listado.Size = new System.Drawing.Size(931, 461);
-            this.Dgv_Listado.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 67);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Buscar :";
-            // 
-            // Txt_Buscar
-            // 
-            this.Txt_Buscar.Location = new System.Drawing.Point(76, 66);
-            this.Txt_Buscar.Name = "Txt_Buscar";
-            this.Txt_Buscar.Size = new System.Drawing.Size(348, 22);
-            this.Txt_Buscar.TabIndex = 2;
-            // 
-            // Btn_Buscar
-            // 
-            this.Btn_Buscar.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.Btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Buscar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Buscar.Location = new System.Drawing.Point(427, 57);
-            this.Btn_Buscar.Name = "Btn_Buscar";
-            this.Btn_Buscar.Size = new System.Drawing.Size(100, 34);
-            this.Btn_Buscar.TabIndex = 3;
-            this.Btn_Buscar.Text = "Buscar";
-            this.Btn_Buscar.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 84);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Punto de Venta: (*)";
-            // 
-            // Txt_Descripcion
-            // 
-            this.Txt_Descripcion.Location = new System.Drawing.Point(145, 84);
-            this.Txt_Descripcion.Name = "Txt_Descripcion";
-            this.Txt_Descripcion.Size = new System.Drawing.Size(369, 22);
-            this.Txt_Descripcion.TabIndex = 1;
-            // 
-            // Btn_Cancelar
-            // 
-            this.Btn_Cancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Btn_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Cancelar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Cancelar.Location = new System.Drawing.Point(154, 115);
-            this.Btn_Cancelar.Name = "Btn_Cancelar";
-            this.Btn_Cancelar.Size = new System.Drawing.Size(100, 34);
-            this.Btn_Cancelar.TabIndex = 2;
-            this.Btn_Cancelar.Text = "Cancelar";
-            this.Btn_Cancelar.UseVisualStyleBackColor = false;
+            this.Btn_Retornar.BackColor = System.Drawing.Color.Green;
+            this.Btn_Retornar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Retornar.ForeColor = System.Drawing.Color.White;
+            this.Btn_Retornar.Location = new System.Drawing.Point(364, 115);
+            this.Btn_Retornar.Name = "Btn_Retornar";
+            this.Btn_Retornar.Size = new System.Drawing.Size(100, 34);
+            this.Btn_Retornar.TabIndex = 4;
+            this.Btn_Retornar.Text = "Retornar";
+            this.Btn_Retornar.UseVisualStyleBackColor = false;
+            this.Btn_Retornar.Visible = false;
+            this.Btn_Retornar.Click += new System.EventHandler(this.Btn_Retornar_Click);
             // 
             // Btn_Guardar
             // 
@@ -176,18 +191,39 @@
             this.Btn_Guardar.TabIndex = 3;
             this.Btn_Guardar.Text = "Guardar";
             this.Btn_Guardar.UseVisualStyleBackColor = false;
+            this.Btn_Guardar.Visible = false;
+            this.Btn_Guardar.Click += new System.EventHandler(this.Btn_Guardar_Click);
             // 
-            // Btn_Retornar
+            // Btn_Cancelar
             // 
-            this.Btn_Retornar.BackColor = System.Drawing.Color.Green;
-            this.Btn_Retornar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Retornar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Retornar.Location = new System.Drawing.Point(364, 115);
-            this.Btn_Retornar.Name = "Btn_Retornar";
-            this.Btn_Retornar.Size = new System.Drawing.Size(100, 34);
-            this.Btn_Retornar.TabIndex = 4;
-            this.Btn_Retornar.Text = "Retornar";
-            this.Btn_Retornar.UseVisualStyleBackColor = false;
+            this.Btn_Cancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Btn_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Cancelar.ForeColor = System.Drawing.Color.White;
+            this.Btn_Cancelar.Location = new System.Drawing.Point(154, 115);
+            this.Btn_Cancelar.Name = "Btn_Cancelar";
+            this.Btn_Cancelar.Size = new System.Drawing.Size(100, 34);
+            this.Btn_Cancelar.TabIndex = 2;
+            this.Btn_Cancelar.Text = "Cancelar";
+            this.Btn_Cancelar.UseVisualStyleBackColor = false;
+            this.Btn_Cancelar.Visible = false;
+            this.Btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
+            // 
+            // Txt_Descripcion
+            // 
+            this.Txt_Descripcion.Location = new System.Drawing.Point(145, 84);
+            this.Txt_Descripcion.Name = "Txt_Descripcion";
+            this.Txt_Descripcion.ReadOnly = true;
+            this.Txt_Descripcion.Size = new System.Drawing.Size(369, 22);
+            this.Txt_Descripcion.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(24, 84);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(117, 16);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Punto de Venta: (*)";
             // 
             // Btn_Nuevo
             // 
@@ -204,6 +240,17 @@
             this.Btn_Nuevo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_Nuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Btn_Nuevo.UseVisualStyleBackColor = false;
+            this.Btn_Nuevo.Click += new System.EventHandler(this.Btn_Nuevo_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "nuevo.png");
+            this.imageList1.Images.SetKeyName(1, "actualizar.png");
+            this.imageList1.Images.SetKeyName(2, "eliminar.png");
+            this.imageList1.Images.SetKeyName(3, "reporte.png");
+            this.imageList1.Images.SetKeyName(4, "salir.png");
             // 
             // Btn_Actualizar
             // 
@@ -220,6 +267,7 @@
             this.Btn_Actualizar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_Actualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Btn_Actualizar.UseVisualStyleBackColor = false;
+            this.Btn_Actualizar.Click += new System.EventHandler(this.Btn_Actualizar_Click);
             // 
             // Btn_Eliminar
             // 
@@ -269,16 +317,6 @@
             this.Btn_Salir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Btn_Salir.UseVisualStyleBackColor = false;
             // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "nuevo.png");
-            this.imageList1.Images.SetKeyName(1, "actualizar.png");
-            this.imageList1.Images.SetKeyName(2, "eliminar.png");
-            this.imageList1.Images.SetKeyName(3, "reporte.png");
-            this.imageList1.Images.SetKeyName(4, "salir.png");
-            // 
             // Pnl_titulo_form
             // 
             this.Pnl_titulo_form.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(145)))), ((int)(((byte)(194)))));
@@ -296,19 +334,9 @@
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label3.Location = new System.Drawing.Point(33, 22);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(168, 23);
+            this.label3.Size = new System.Drawing.Size(134, 18);
             this.label3.TabIndex = 0;
             this.label3.Text = "Punto de Venta";
-            // 
-            // Lbl_totalregistros
-            // 
-            this.Lbl_totalregistros.AutoSize = true;
-            this.Lbl_totalregistros.Location = new System.Drawing.Point(811, 592);
-            this.Lbl_totalregistros.Name = "Lbl_totalregistros";
-            this.Lbl_totalregistros.Size = new System.Drawing.Size(112, 16);
-            this.Lbl_totalregistros.TabIndex = 4;
-            this.Lbl_totalregistros.Text = "Total Registros: 0";
-            this.Lbl_totalregistros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Frm_Punto_Venta
             // 
@@ -321,17 +349,17 @@
             this.Controls.Add(this.Btn_Eliminar);
             this.Controls.Add(this.Btn_Actualizar);
             this.Controls.Add(this.Btn_Nuevo);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.Tbc_principal);
             this.Name = "Frm_Punto_Venta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Punto_Venta";
             this.Load += new System.EventHandler(this.Frm_Punto_Venta_Load);
-            this.tabControl1.ResumeLayout(false);
+            this.Tbc_principal.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Listado)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Listado)).EndInit();
             this.Pnl_titulo_form.ResumeLayout(false);
             this.Pnl_titulo_form.PerformLayout();
             this.ResumeLayout(false);
@@ -340,7 +368,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl Tbc_principal;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.DataGridView Dgv_Listado;
