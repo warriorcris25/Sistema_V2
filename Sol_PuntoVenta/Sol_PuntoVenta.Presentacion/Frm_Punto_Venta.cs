@@ -193,5 +193,59 @@ namespace Sol_PuntoVenta.Presentacion
             }
             
         }
+
+        private void Btn_Eliminar_Click(object sender, EventArgs e)
+        {
+            if (Dgv_Listado.Rows.Count > 0)
+            {
+                DialogResult Opcion;
+                Opcion = MessageBox.Show("¿Estas seguro de eliminar el registro seleccionado?",
+                                         "Aviso del Sistema",
+                                         MessageBoxButtons.YesNo,
+                                         MessageBoxIcon.Question);
+                if (Opcion==DialogResult.Yes)
+                {
+                    string Rpta = "";
+                    this.Selecciona_item();
+                    Rpta = N_Punto_Venta.Eliminar_pv(this.nCodigo);
+                    if (Rpta.Equals("OK"))
+                    {
+                        this.Listado_pv("%");
+                        MessageBox.Show("El registro ha sido eliminado",
+                                        "Aviso del Sistema",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Exclamation);
+                    }
+                    else
+                    {
+                        MessageBox.Show(Rpta,
+                                        "Aviso del Sistema",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Exclamation);
+                    }
+                    this.Limpia_Texto();
+                }
+            }
+        }
+
+        private void Btn_Buscar_Click(object sender, EventArgs e)
+        {
+            this.Listado_pv(Txt_Buscar.Text.Trim());
+        }
+
+        private void Btn_Reporte_Click(object sender, EventArgs e)
+        {
+            if (Dgv_Listado.Rows.Count>0)
+            {
+                Reportes.Frm_Rpt_Punto_Venta oRpt_pv = new Reportes.Frm_Rpt_Punto_Venta();
+                oRpt_pv.Txt_p1.Text = Txt_Buscar.Text.Trim();
+                oRpt_pv.ShowDialog();
+            }
+        }
+
+        private void Btn_Salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

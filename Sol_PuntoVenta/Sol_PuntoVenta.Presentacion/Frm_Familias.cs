@@ -25,20 +25,20 @@ namespace Sol_PuntoVenta.Presentacion
         #endregion
 
         #region "Mis Métodos"
-        private void Formato_pv()
+        private void Formato_fa()
         {
             Dgv_listado.Columns[0].Width = 100;
-            Dgv_listado.Columns[0].HeaderText = "CODIGO_PV";
+            Dgv_listado.Columns[0].HeaderText = "CODIGO_FA";
             Dgv_listado.Columns[1].Width = 750;
-            Dgv_listado.Columns[1].HeaderText = "PUNTO DE VENTA";
+            Dgv_listado.Columns[1].HeaderText = "FAMILIA";
         }
 
-        private void Listado_pv(string cTexto)
+        private void Listado_fa(string cTexto)
         {
             try
             {
-                Dgv_listado.DataSource = N_Punto_Venta.Listado_pv(cTexto);
-                this.Formato_pv();
+                Dgv_listado.DataSource = N_Familias.Listado_fa(cTexto);
+                this.Formato_fa();
                 Lbl_totalregistros.Text = "Total registros: " + Convert.ToString(Dgv_listado.Rows.Count);
             }
             catch (Exception ex)
@@ -74,7 +74,7 @@ namespace Sol_PuntoVenta.Presentacion
         }
         private void Selecciona_item()
         {
-            if (string.IsNullOrEmpty(Convert.ToString(Dgv_listado.CurrentRow.Cells["codigo_pv"].Value)))
+            if (string.IsNullOrEmpty(Convert.ToString(Dgv_listado.CurrentRow.Cells["codigo_fa"].Value)))
             {
                 MessageBox.Show("Selecciona un registro",
                                 "Aviso del Sistema",
@@ -83,8 +83,8 @@ namespace Sol_PuntoVenta.Presentacion
             }
             else
             {
-                this.nCodigo = Convert.ToInt32(Dgv_listado.CurrentRow.Cells["codigo_pv"].Value);
-                Txt_Descripcion.Text = Convert.ToString(Dgv_listado.CurrentRow.Cells["descripcion_pv"].Value);
+                this.nCodigo = Convert.ToInt32(Dgv_listado.CurrentRow.Cells["codigo_fa"].Value);
+                Txt_Descripcion.Text = Convert.ToString(Dgv_listado.CurrentRow.Cells["descripcion_fa"].Value);
             }
         }
         #endregion
@@ -96,10 +96,11 @@ namespace Sol_PuntoVenta.Presentacion
 
         private void Frm_Familias_Load(object sender, EventArgs e)
         {
-            this.Listado_pv("%");
+            this.Listado_fa("%");
         }
         private void Btn_Nuevo_Click(object sender, EventArgs e)
         {
+            this.Estadoguarda = 1; //Nuevo Registro significa el 1 
             this.Estado_BotonesPrincipales(false);
             this.Estado_BotonesProcesos(true);
             this.Limpia_Texto();
@@ -136,10 +137,10 @@ namespace Sol_PuntoVenta.Presentacion
                 else
                 {
                     string Rpta = "";
-                    E_Punto_Venta oPropiedad = new E_Punto_Venta();
-                    oPropiedad.Codigo_pv = this.nCodigo;
-                    oPropiedad.Descripcion_pv = Txt_Descripcion.Text.Trim();
-                    Rpta = N_Punto_Venta.Guardar_pv(this.Estadoguarda, oPropiedad);
+                    E_Familias oPropiedad = new E_Familias();
+                    oPropiedad.Codigo_fa = this.nCodigo;
+                    oPropiedad.Descripcion_fa = Txt_Descripcion.Text.Trim();
+                    Rpta = N_Familias.Guardar_fa(this.Estadoguarda, oPropiedad);
                     if (Rpta.Equals("OK"))
                     {
                         MessageBox.Show("Los datos han sido guardados correctamente",
@@ -151,7 +152,7 @@ namespace Sol_PuntoVenta.Presentacion
                         this.Estado_BotonesPrincipales(true);
                         this.Estado_BotonesProcesos(false);
                         this.Estadoguarda = 0;
-                        this.Listado_pv("%");
+                        this.Listado_fa("%");
                         Tbc_principal.SelectedIndex = 0;
                     }
                     else
@@ -193,6 +194,60 @@ namespace Sol_PuntoVenta.Presentacion
                 Tbc_principal.SelectedIndex = 1;
             }
 
+        }
+
+        private void Btn_Eliminar_Click(object sender, EventArgs e)
+        {
+            if (Dgv_listado.Rows.Count > 0)
+            {
+                DialogResult Opcion;
+                Opcion = MessageBox.Show("¿Estas seguro de eliminar el registro seleccionado?",
+                                         "Aviso del Sistema",
+                                         MessageBoxButtons.YesNo,
+                                         MessageBoxIcon.Question);
+                if (Opcion == DialogResult.Yes)
+                {
+                    string Rpta = "";
+                    this.Selecciona_item();
+                    Rpta = N_Familias.Eliminar_fa(this.nCodigo);
+                    if (Rpta.Equals("OK"))
+                    {
+                        this.Listado_fa("%");
+                        MessageBox.Show("El registro ha sido eliminado",
+                                        "Aviso del Sistema",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Exclamation);
+                    }
+                    else
+                    {
+                        MessageBox.Show(Rpta,
+                                        "Aviso del Sistema",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Exclamation);
+                    }
+                    this.Limpia_Texto();
+                }
+            }
+        }
+
+        private void Btn_Buscar_Click(object sender, EventArgs e)
+        {
+            this.Listado_fa(Txt_Buscar.Text.Trim());
+        }
+
+        private void Btn_Reporte_Click(object sender, EventArgs e)
+        {
+            if (Dgv_listado.Rows.Count > 0)
+            {
+               Reportes.Frm_Rpt_Familias oRpt_fa = new Reportes.Frm_Rpt_Familias();
+               oRpt_fa.Txt_p1.Text = Txt_Buscar.Text.Trim();
+               oRpt_fa.ShowDialog();
+            }
+        }
+
+        private void Btn_Salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
