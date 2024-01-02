@@ -41,9 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="N_Area_Despacho.cs" />
     <Compile Include="N_Familias.cs" />
     <Compile Include="N_Marcas.cs" />
+    <Compile Include="N_Mesas.cs" />
     <Compile Include="N_Punto_Venta.cs" />
+    <Compile Include="N_SubFamilias.cs" />
+    <Compile Include="N_Unidades_Medidas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

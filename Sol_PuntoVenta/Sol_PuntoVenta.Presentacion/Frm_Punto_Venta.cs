@@ -247,5 +247,7 @@ namespace Sol_PuntoVenta.Presentacion
         {
             this.Close();
         }
+
+        
     }
 }

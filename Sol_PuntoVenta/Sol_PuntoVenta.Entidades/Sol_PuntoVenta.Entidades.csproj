@@ -41,9 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="E_Area_Despacho.cs" />
     <Compile Include="E_Familias.cs" />
     <Compile Include="E_Marcas.cs" />
+    <Compile Include="E_Mesas.cs" />
     <Compile Include="E_Punto_Venta.cs" />
+    <Compile Include="E_SubFamilias.cs" />
+    <Compile Include="E_Unidades_Medidas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

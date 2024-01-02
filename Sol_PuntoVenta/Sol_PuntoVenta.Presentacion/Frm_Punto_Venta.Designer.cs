@@ -219,6 +219,7 @@
             // Txt_Descripcion
             // 
             this.Txt_Descripcion.Location = new System.Drawing.Point(145, 84);
+            this.Txt_Descripcion.MaxLength = 30;
             this.Txt_Descripcion.Name = "Txt_Descripcion";
             this.Txt_Descripcion.ReadOnly = true;
             this.Txt_Descripcion.Size = new System.Drawing.Size(369, 22);

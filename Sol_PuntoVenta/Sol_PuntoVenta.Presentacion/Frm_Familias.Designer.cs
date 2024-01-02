@@ -215,7 +215,9 @@
             // Txt_Descripcion
             // 
             this.Txt_Descripcion.Location = new System.Drawing.Point(115, 105);
+            this.Txt_Descripcion.MaxLength = 30;
             this.Txt_Descripcion.Name = "Txt_Descripcion";
+            this.Txt_Descripcion.ReadOnly = true;
             this.Txt_Descripcion.Size = new System.Drawing.Size(351, 22);
             this.Txt_Descripcion.TabIndex = 1;
             // 
@@ -336,7 +338,7 @@
             this.Pnl_titulo_form.Dock = System.Windows.Forms.DockStyle.Top;
             this.Pnl_titulo_form.Location = new System.Drawing.Point(0, 0);
             this.Pnl_titulo_form.Name = "Pnl_titulo_form";
-            this.Pnl_titulo_form.Size = new System.Drawing.Size(2315, 80);
+            this.Pnl_titulo_form.Size = new System.Drawing.Size(1786, 80);
             this.Pnl_titulo_form.TabIndex = 6;
             // 
             // label3
@@ -354,7 +356,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2315, 1318);
+            this.ClientSize = new System.Drawing.Size(1786, 973);
             this.Controls.Add(this.Pnl_titulo_form);
             this.Controls.Add(this.Btn_Salir);
             this.Controls.Add(this.Btn_Reporte);

@@ -72,3 +72,11 @@ D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Prese
 D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Reportes.Frm_Rpt_Familias.resources
 D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Frm_Marcas.resources
 D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Reportes.Frm_Rpt_Marcas.resources
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Frm_Unidades_Medidas.resources
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Reportes.Frm_Rpt_Unidades_Medidas.resources
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Frm_SubFamilias.resources
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Reportes.Frm_Rpt_SubFamilias.resources
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Frm_Mesas.resources
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Reportes.Frm_Rpt_Mesas.resources
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Frm_Area_Despacho.resources
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Reportes.Frm_Rpt_Area_Despacho.resources
