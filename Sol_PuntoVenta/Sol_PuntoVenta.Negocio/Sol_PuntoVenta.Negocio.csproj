@@ -45,6 +45,7 @@
     <Compile Include="N_Familias.cs" />
     <Compile Include="N_Marcas.cs" />
     <Compile Include="N_Mesas.cs" />
+    <Compile Include="N_Productos.cs" />
     <Compile Include="N_Punto_Venta.cs" />
     <Compile Include="N_SubFamilias.cs" />
     <Compile Include="N_Unidades_Medidas.cs" />
