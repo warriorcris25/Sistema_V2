@@ -198,7 +198,7 @@ namespace Sol_PuntoVenta.Datos
                 if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
             }
         }
-        public DataTable Punto_Ventas_OK(int nOpcion, int nCodigo_pr, int v)
+        public DataTable Puntos_Ventas_OK(int nOpcion, int nCodigo_pr)
         {
             SqlDataReader Resultado;
             DataTable Tabla = new DataTable();
