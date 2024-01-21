@@ -13,7 +13,7 @@ namespace Sol_PuntoVenta.Entidades
         public int Codigo_ma { get; set; }
         public int Codigo_um { get; set; }
         public int Codigo_sf { get; set; }
-        public int Precio_Unitario { get; set; }
+        public decimal Precio_Unitario { get; set; }
         public int Codigo_ad {  get; set; }
         public string Observacion { get; set; }
         public byte[] Imagen {  get; set; }

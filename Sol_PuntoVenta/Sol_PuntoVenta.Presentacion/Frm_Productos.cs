@@ -37,15 +37,15 @@ namespace Sol_PuntoVenta.Presentacion
             Dgv_listado.Columns[0].HeaderText = "CODIGO_PR";
             Dgv_listado.Columns[1].Width = 300;
             Dgv_listado.Columns[1].HeaderText = "PRODUCTO";
-            Dgv_listado.Columns[2].Width = 150;
+            Dgv_listado.Columns[2].Width = 180;
             Dgv_listado.Columns[2].HeaderText = "MARCA";
-            Dgv_listado.Columns[3].Width = 150;
+            Dgv_listado.Columns[3].Width = 180;
             Dgv_listado.Columns[3].HeaderText = "MEDIDA";
-            Dgv_listado.Columns[4].Width = 150;
+            Dgv_listado.Columns[4].Width = 180;
             Dgv_listado.Columns[4].HeaderText = "SUBFAMILIA";
-            Dgv_listado.Columns[5].Width = 120;
+            Dgv_listado.Columns[5].Width = 150;
             Dgv_listado.Columns[5].HeaderText = "P. UNITARIO";
-            Dgv_listado.Columns[6].Width = 150;
+            Dgv_listado.Columns[6].Width = 180;
             Dgv_listado.Columns[6].HeaderText = "AREA DESPACHO";
             Dgv_listado.Columns[7].Visible = false;
             Dgv_listado.Columns[8].Visible = false;
@@ -54,14 +54,34 @@ namespace Sol_PuntoVenta.Presentacion
             Dgv_listado.Columns[11].Visible = false;
         }
 
-
         private void Formato_ma()
         {
             Dgv_1.Columns[0].Visible = false;
-            Dgv_1.Columns[1].Width = 750;
+            Dgv_1.Columns[1].Width = 300;
             Dgv_1.Columns[1].HeaderText = "MARCA";
         }
-       
+        private void Formato_um()
+        {
+            Dgv_2.Columns[0].Visible = false;
+            Dgv_2.Columns[1].Width = 300;
+            Dgv_2.Columns[1].HeaderText = "MEDIDA";
+        }
+        private void Formato_sf()
+        {
+            Dgv_3.Columns[0].Visible = false;
+            Dgv_3.Columns[1].Width = 250;
+            Dgv_3.Columns[1].HeaderText = "SUBFAMILIA";
+            Dgv_3.Columns[2].Width = 250;
+            Dgv_3.Columns[2].HeaderText = "FAMILIA";
+            Dgv_3.Columns[3].Visible = false;
+        }
+        private void Formato_ad()
+        {
+            Dgv_4.Columns[0].Visible = false;
+            Dgv_4.Columns[1].Width = 300;
+            Dgv_4.Columns[1].HeaderText = "AREA DE DESPACHO";
+        }
+
         private void Listado_pr(string cTexto)
         {
             try
@@ -90,13 +110,52 @@ namespace Sol_PuntoVenta.Presentacion
                 throw;
             }
         }
+        private void Listado_um(string cTexto)
+        {
+            try
+            {
+                Dgv_2.DataSource = N_Productos.Listado_um(cTexto);
+                this.Formato_um();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+                throw;
+            }
+        }
+        private void Listado_sf(string cTexto)
+        {
+            try
+            {
+                Dgv_3.DataSource = N_Productos.Listado_sf(cTexto);
+                this.Formato_sf();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+                throw;
+            }
+        }
+        private void Listado_ad(string cTexto)
+        {
+            try
+            {
+                Dgv_4.DataSource = N_Productos.Listado_ad(cTexto);
+                this.Formato_ad();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+                throw;
+            }
+        }
         private void Limpia_Texto()
         {
             Txt_descripcion_pr.Text = "";
             Txt_descripcion_ma.Text = "";
             Txt_descripcion_um.Text = "";
             Txt_descripcion_sf.Text = "";
-            Txt_precio_unitario.Text = "";
+            Txt_precio_unitario.Text = "0.00";
             Txt_descripcion_ad.Text = "";
             Txt_observacion.Text = "";
         }
@@ -123,6 +182,10 @@ namespace Sol_PuntoVenta.Presentacion
             Btn_Guardar.Visible = lestado;
             Btn_Retornar.Visible = !lestado;
             Btn_lupa_ma.Visible = lestado;
+            Btn_lupa_um.Visible = lestado;
+            Btn_lupa_sf.Visible = lestado;
+            Btn_lupa_ad.Visible = lestado;
+            Btn_agregar_imagen.Visible = lestado;
         }
 
         private void Mostar_img(int nCodigo_pr)
@@ -132,22 +195,30 @@ namespace Sol_PuntoVenta.Presentacion
             MemoryStream ms = new MemoryStream(bImagen);
             Pct_imagen.Image = System.Drawing.Bitmap.FromStream(ms);
         }
+        private void Mostrar_img_prod_pred()
+        {
+            Byte[] bImagen = new Byte[0];
+            bImagen = N_Productos.Mostrar_img_prod_pred();
+            MemoryStream ms = new MemoryStream(bImagen);
+            Pct_imagen.Image = System.Drawing.Bitmap.FromStream(ms);
+        }
 
         private void Crear_Tabla_pv()
         {
             this.Dtdetalle = new DataTable("Detalle");
-            this.Dtdetalle.Columns.Add("Descripcion_pv", System.Type.GetType("Systm.String"));
-            this.Dtdetalle.Columns.Add("OK", System.Type.GetType("Systm.Boolean"));
-            this.Dtdetalle.Columns.Add("Codgio_pv", System.Type.GetType("Systm.Int32"));
+            this.Dtdetalle.Columns.Add("Descripcion_pv", System.Type.GetType("System.String"));
+            this.Dtdetalle.Columns.Add("OK", System.Type.GetType("System.Boolean"));
+            this.Dtdetalle.Columns.Add("Codigo_pv", System.Type.GetType("System.Int32"));
 
             Dgv_PuntosVentas.DataSource = this.Dtdetalle;
+
             Dgv_PuntosVentas.Columns[0].Width = 250;
             Dgv_PuntosVentas.Columns[0].HeaderText = "PUNTO DE VENTA";
+            Dgv_PuntosVentas.Columns[0].ReadOnly = true;
+            Dgv_PuntosVentas.Columns[1].Width = 100;
+            Dgv_PuntosVentas.Columns[1].HeaderText = "OK";
             Dgv_PuntosVentas.Columns[1].ReadOnly = true;
-            Dgv_PuntosVentas.Columns[1].Width = 50;
-            Dgv_PuntosVentas.Columns[1].HeaderText = "PUNTO DE VENTA";
-            Dgv_PuntosVentas.Columns[1].ReadOnly = true;
-            Dgv_PuntosVentas.Columns[1].Visible = false;
+            Dgv_PuntosVentas.Columns[2].Visible = false;
         }
 
         private void Agregar_pv(string Descripcion_pv, bool OK, int nCodigo_pv)
@@ -156,6 +227,7 @@ namespace Sol_PuntoVenta.Presentacion
             Fila["Descripcion_pv"] = Descripcion_pv;
             Fila["OK"] = OK;
             Fila["Codigo_pv"] = nCodigo_pv;
+            this.Dtdetalle.Rows.Add(Fila);
         }
 
         private void Puntos_Ventas_OK(int nOpcion, int nCodigo_pr)
@@ -219,9 +291,9 @@ namespace Sol_PuntoVenta.Presentacion
 
 
 
-        private void Selecciona_item_fa()
+        private void Selecciona_item_ma()
         {
-            if (string.IsNullOrEmpty(Convert.ToString(Dgv_1.CurrentRow.Cells["codigo_fa"].Value)))
+            if (string.IsNullOrEmpty(Convert.ToString(Dgv_1.CurrentRow.Cells["codigo_ma"].Value)))
             {
                 MessageBox.Show("Selecciona un registro",
                                 "Aviso del Sistema",
@@ -230,21 +302,65 @@ namespace Sol_PuntoVenta.Presentacion
             }
             else
             {
-                Txt_descripcion_sf.Text = Convert.ToString(Dgv_1.CurrentRow.Cells["descripcion_fa"].Value);
-                this.nCodigo_fa = Convert.ToInt32(Dgv_1.CurrentRow.Cells["codigo_fa"].Value);
+                Txt_descripcion_ma.Text = Convert.ToString(Dgv_1.CurrentRow.Cells["descripcion_ma"].Value);
+                this.nCodigo_ma = Convert.ToInt32(Dgv_1.CurrentRow.Cells["codigo_ma"].Value);
+            }
+        }
+        private void Selecciona_item_um()
+        {
+            if (string.IsNullOrEmpty(Convert.ToString(Dgv_2.CurrentRow.Cells["codigo_um"].Value)))
+            {
+                MessageBox.Show("Selecciona un registro",
+                                "Aviso del Sistema",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                Txt_descripcion_um.Text = Convert.ToString(Dgv_2.CurrentRow.Cells["descripcion_um"].Value);
+                this.nCodigo_um = Convert.ToInt32(Dgv_2.CurrentRow.Cells["codigo_um"].Value);
+            }
+        }
+        private void Selecciona_item_sf()
+        {
+            if (string.IsNullOrEmpty(Convert.ToString(Dgv_3.CurrentRow.Cells["codigo_sf"].Value)))
+            {
+                MessageBox.Show("Selecciona un registro",
+                                "Aviso del Sistema",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                Txt_descripcion_sf.Text = Convert.ToString(Dgv_3.CurrentRow.Cells["descripcion_sf"].Value);
+                this.nCodigo_sf = Convert.ToInt32(Dgv_3.CurrentRow.Cells["codigo_sf"].Value);
+            }
+        }
+        private void Selecciona_item_ad()
+        {
+            if (string.IsNullOrEmpty(Convert.ToString(Dgv_4.CurrentRow.Cells["codigo_ad"].Value)))
+            {
+                MessageBox.Show("Selecciona un registro",
+                                "Aviso del Sistema",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                Txt_descripcion_ad.Text = Convert.ToString(Dgv_4.CurrentRow.Cells["descripcion_ad"].Value);
+                this.nCodigo_ad = Convert.ToInt32(Dgv_4.CurrentRow.Cells["codigo_ad"].Value);
             }
         }
         #endregion
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Frm_Productos_Load(object sender, EventArgs e)
         {
             this.Listado_pr("%");
-            this.Listado_fa("%");
+            this.Listado_ma("%");
+            this.Listado_um("%");
+            this.Listado_sf("%");
+            this.Listado_ad("%");
+            this.Crear_Tabla_pv();
         }
         private void Btn_Nuevo_Click(object sender, EventArgs e)
         {
@@ -253,8 +369,15 @@ namespace Sol_PuntoVenta.Presentacion
             this.Estado_BotonesProcesos(true);
             this.Limpia_Texto();
             this.Estado_Texto(true);
+            this.Puntos_Ventas_OK(this.Estadoguarda, this.nCodigo);
+            this.Mostrar_img_prod_pred();
+            this.nCodigo = 0;
+            this.nCodigo_ma = 0;
+            this.nCodigo_um = 0;
+            this.nCodigo_sf = 0;
+            this.nCodigo_ad = 0;
             Tbc_principal.SelectedIndex = 1;
-            Btn_lupa_sf.Focus();
+            Txt_descripcion_pr.Focus();
         }
 
         private void Btn_Cancelar_Click(object sender, EventArgs e)
@@ -275,8 +398,12 @@ namespace Sol_PuntoVenta.Presentacion
         {
             try
             {
-                if (Txt_precio_unitario.Text == String.Empty ||
-                    Txt_descripcion_sf.Text == String.Empty)
+                if (Txt_descripcion_pr.Text == String.Empty ||
+                    Txt_descripcion_ma.Text == String.Empty ||
+                    Txt_descripcion_um.Text == String.Empty ||
+                    Txt_descripcion_sf.Text == String.Empty ||
+                    Txt_descripcion_ad.Text == String.Empty ||
+                    Txt_precio_unitario.Text == String.Empty)
                 {
                     MessageBox.Show("Falta ingresar datos requeridos (*)",
                                     "Aviso del Sistema",
@@ -286,11 +413,20 @@ namespace Sol_PuntoVenta.Presentacion
                 else
                 {
                     string Rpta = "";
-                    E_SubFamilias oPropiedad = new E_SubFamilias();
-                    oPropiedad.Codigo_sf = this.nCodigo;
-                    oPropiedad.Descripcion_sf = Txt_precio_unitario.Text.Trim();
-                    oPropiedad.Codigo_fa = this.nCodigo_fa;
-                    Rpta = N_SubFamilias.Guardar_sf(this.Estadoguarda, oPropiedad);
+                    E_Productos oPropiedad = new E_Productos();
+                    oPropiedad.Codigo_pr = this.nCodigo;
+                    oPropiedad.Descripcion_pr = Txt_descripcion_pr.Text.Trim();
+                    oPropiedad.Codigo_ma = this.nCodigo_ma;
+                    oPropiedad.Codigo_um = this.nCodigo_um;
+                    oPropiedad.Codigo_sf = this.nCodigo_sf;
+                    oPropiedad.Codigo_ad = this.nCodigo_ad;
+                    oPropiedad.Precio_Unitario = Convert.ToDecimal(Txt_precio_unitario.Text.Trim());
+                    oPropiedad.Observacion = Txt_observacion.Text.Trim();
+                    System.IO.MemoryStream ms = new MemoryStream();
+                    Pct_imagen.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                    oPropiedad.Imagen = ms.GetBuffer();
+
+                    Rpta = N_Productos.Guardar_pr(this.Estadoguarda, oPropiedad, Dtdetalle);
                     if (Rpta.Equals("OK"))
                     {
                         MessageBox.Show("Los datos han sido guardados correctamente",
@@ -303,8 +439,11 @@ namespace Sol_PuntoVenta.Presentacion
                         this.Estado_BotonesProcesos(false);
                         this.Estadoguarda = 0;
                         this.nCodigo = 0;
-                        this.nCodigo_fa = 0;
-                        this.Listado_sf("%");
+                        this.nCodigo_ma = 0;
+                        this.nCodigo_um = 0;
+                        this.nCodigo_sf = 0;
+                        this.nCodigo_ad = 0;
+                        this.Listado_pr("%");
                         Tbc_principal.SelectedIndex = 0;
                     }
                     else
@@ -333,7 +472,7 @@ namespace Sol_PuntoVenta.Presentacion
                 this.Limpia_Texto();
                 this.Selecciona_item();
                 Tbc_principal.SelectedIndex = 1;
-                Btn_lupa_sf.Focus();
+                Txt_descripcion_pr.Focus();
             }
         }
 
@@ -361,15 +500,19 @@ namespace Sol_PuntoVenta.Presentacion
                 {
                     string Rpta = "";
                     this.Selecciona_item();
-                    Rpta = N_SubFamilias.Eliminar_sf(this.nCodigo);
+                    Rpta = N_Productos.Eliminar_pr(this.nCodigo);
                     if (Rpta.Equals("OK"))
                     {
-                        this.Listado_sf("%");
+                        this.Listado_pr("%");
                         MessageBox.Show("El registro ha sido eliminado",
                                         "Aviso del Sistema",
                                         MessageBoxButtons.OK,
                                         MessageBoxIcon.Exclamation);
                         this.nCodigo = 0;
+                        this.nCodigo_ma = 0;
+                        this.nCodigo_um = 0;
+                        this.nCodigo_sf = 0;
+                        this.nCodigo_ad = 0;
                     }
                     else
                     {
@@ -385,16 +528,16 @@ namespace Sol_PuntoVenta.Presentacion
 
         private void Btn_Buscar_Click(object sender, EventArgs e)
         {
-            this.Listado_sf(Txt_Buscar.Text.Trim());
+            this.Listado_pr(Txt_Buscar.Text.Trim());
         }
 
         private void Btn_Reporte_Click(object sender, EventArgs e)
         {
             if (Dgv_listado.Rows.Count > 0)
             {
-                Reportes.Frm_Rpt_SubFamilias oRpt_sf = new Reportes.Frm_Rpt_SubFamilias();
-                oRpt_sf.Txt_p1.Text = Txt_Buscar.Text.Trim();
-                oRpt_sf.ShowDialog();
+                Reportes.Frm_Rpt_Productos oRpt_pr = new Reportes.Frm_Rpt_Productos();
+                oRpt_pr.Txt_p1.Text = Txt_Buscar.Text.Trim();
+                oRpt_pr.ShowDialog();
             }
         }
 
@@ -405,7 +548,7 @@ namespace Sol_PuntoVenta.Presentacion
 
         private void Dgv_1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            this.Selecciona_item_fa();
+            this.Selecciona_item_ma();
             Pnl_Listado_1.Visible = false;
         }
 
@@ -416,32 +559,94 @@ namespace Sol_PuntoVenta.Presentacion
 
         private void Btn_Buscar1_Click(object sender, EventArgs e)
         {
-            this.Listado_fa(Txt_Buscar1.Text.Trim());
+            this.Listado_ma(Txt_Buscar1.Text.Trim());
         }
 
         private void Btn_Lupa_1_Click(object sender, EventArgs e)
         {
-            Pnl_Listado_1.Location = Btn_lupa_sf.Location;
+            Pnl_Listado_1.Location = Btn_lupa_ma.Location;
             Pnl_Listado_1.Visible = true;
             Txt_Buscar1.Focus();
         }
 
-        private void Dgv_1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void Btn_lupa_um_Click(object sender, EventArgs e)
         {
-            this.Selecciona_item_fa();
-            Pnl_Listado_1.Visible = false;
+            Pnl_Listado_2.Location = Btn_lupa_um.Location;
+            Pnl_Listado_2.Visible = true;
+            Txt_Buscar2.Focus();
+        }
+
+        private void Btn_retornar2_Click(object sender, EventArgs e)
+        {
+            Pnl_Listado_2.Visible = false;
+        }
+
+        private void Btn_Buscar2_Click(object sender, EventArgs e)
+        {
+            this.Listado_um(Txt_Buscar2.Text.Trim());
+        }
+
+        private void Dgv_2_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.Selecciona_item_um();
+            Pnl_Listado_2.Visible = false;
+        }
+        private void Btn_Buscar3_Click(object sender, EventArgs e)
+        {
+            this.Listado_sf(Txt_Buscar3.Text.Trim());
+        }
+
+        private void Dgv_3_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.Selecciona_item_sf();
+            Pnl_Listado_3.Visible = false;
             Txt_precio_unitario.Focus();
         }
 
-        /*private void Frm_Productos_Load(object sender, EventArgs e)
+        private void Btn_retornar3_Click(object sender, EventArgs e)
         {
+            Pnl_Listado_3.Visible = false;
+        }
 
-            this.reportViewer1.RefreshReport();
-        }*/
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
+        private void Btn_lupa_sf_Click(object sender, EventArgs e)
         {
+            Pnl_Listado_3.Location = Btn_lupa_ma.Location;
+            Pnl_Listado_3.Visible = true;
+            Txt_Buscar3.Focus();
+        }
 
+        private void Btn_Buscar4_Click(object sender, EventArgs e)
+        {
+            this.Listado_ad(Txt_Buscar4.Text.Trim());
+        }
+
+        private void Btn_retornar4_Click(object sender, EventArgs e)
+        {
+            Pnl_Listado_4.Visible = false;
+        }
+
+        private void Dgv_4_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.Selecciona_item_ad();
+            Pnl_Listado_4.Visible = false;
+            Txt_observacion.Focus();
+        }
+
+        private void Btn_lupa_ad_Click(object sender, EventArgs e)
+        {
+            Pnl_Listado_4.Location = Btn_lupa_ma.Location;
+            Pnl_Listado_4.Visible = true;
+            Txt_Buscar4.Focus();
+        }
+
+        private void Btn_agregar_imagen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Foto = new OpenFileDialog();
+            Foto.Filter = "Image files(*.jpg, *.jpe, *.jfif, *.png, *.jpeg) | *.jpg; *.jpe; *.jfif; *.png; *.jpeg";
+            if (Foto.ShowDialog()== DialogResult.OK)
+            {
+                Pct_imagen.Image = Image.FromFile(Foto.FileName);
+            }
         }
     }
 }

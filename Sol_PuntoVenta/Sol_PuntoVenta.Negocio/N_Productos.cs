@@ -57,5 +57,10 @@ namespace Sol_PuntoVenta.Negocio
             D_Productos Datos = new D_Productos();
             return Datos.Mostrar_img(nCodigo_pr);
         }
+        public static Byte[] Mostrar_img_prod_pred()
+        {
+            D_Productos Datos = new D_Productos();
+            return Datos.Mostrar_img_prod_pred();
+        }
     }
 }

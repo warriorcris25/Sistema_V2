@@ -209,7 +209,7 @@ namespace Sol_PuntoVenta.Datos
                 SqlCommand Comando = new SqlCommand("USP_Puntos_Ventas_OK", SqlCon);
                 Comando.CommandType = CommandType.StoredProcedure;
                 Comando.Parameters.Add("@nOpcion", SqlDbType.Int).Value = nOpcion;
-                Comando.Parameters.Add("@nCodgio_pr", SqlDbType.Int).Value = nCodigo_pr;
+                Comando.Parameters.Add("@nCodigo_pr", SqlDbType.Int).Value = nCodigo_pr;
                 SqlCon.Open();
                 Resultado = Comando.ExecuteReader();
                 Tabla.Load(Resultado);
@@ -236,7 +236,33 @@ namespace Sol_PuntoVenta.Datos
                 SqlCon = Conexion.getInstancia().CrearConexion();
                 SqlCommand Comando = new SqlCommand("USP_Mostrar_img", SqlCon);
                 Comando.CommandType = CommandType.StoredProcedure;
-                Comando.Parameters.Add("@nCodgio_pr", SqlDbType.Int).Value = nCodigo_pr;
+                Comando.Parameters.Add("@nCodigo_pr", SqlDbType.Int).Value = nCodigo_pr;
+                SqlCon.Open();
+                Resultado = Comando.ExecuteReader();
+                Tabla.Load(Resultado);
+                bImagen = (byte[])Tabla.Rows[0][0];
+                return bImagen;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+        }
+        public byte[] Mostrar_img_prod_pred()
+        {
+            Byte[] bImagen = new byte[0];
+            SqlDataReader Resultado;
+            DataTable Tabla = new DataTable();
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon = Conexion.getInstancia().CrearConexion();
+                SqlCommand Comando = new SqlCommand("Mostrar_img_prod_pred", SqlCon);
+                Comando.CommandType = CommandType.StoredProcedure;
                 SqlCon.Open();
                 Resultado = Comando.ExecuteReader();
                 Tabla.Load(Resultado);
