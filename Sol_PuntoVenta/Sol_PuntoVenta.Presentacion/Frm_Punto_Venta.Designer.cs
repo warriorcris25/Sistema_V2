@@ -65,10 +65,10 @@
             this.Tbc_principal.Controls.Add(this.tabPage1);
             this.Tbc_principal.Controls.Add(this.tabPage2);
             this.Tbc_principal.ItemSize = new System.Drawing.Size(100, 30);
-            this.Tbc_principal.Location = new System.Drawing.Point(12, 66);
+            this.Tbc_principal.Location = new System.Drawing.Point(12, 72);
             this.Tbc_principal.Name = "Tbc_principal";
             this.Tbc_principal.SelectedIndex = 0;
-            this.Tbc_principal.Size = new System.Drawing.Size(1360, 700);
+            this.Tbc_principal.Size = new System.Drawing.Size(1406, 517);
             this.Tbc_principal.TabIndex = 0;
             // 
             // tabPage1
@@ -81,7 +81,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1352, 662);
+            this.tabPage1.Size = new System.Drawing.Size(1398, 479);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Consultas";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -91,7 +91,7 @@
             this.Lbl_totalregistros.AutoSize = true;
             this.Lbl_totalregistros.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_totalregistros.ForeColor = System.Drawing.Color.DimGray;
-            this.Lbl_totalregistros.Location = new System.Drawing.Point(811, 592);
+            this.Lbl_totalregistros.Location = new System.Drawing.Point(811, 428);
             this.Lbl_totalregistros.Name = "Lbl_totalregistros";
             this.Lbl_totalregistros.Size = new System.Drawing.Size(130, 16);
             this.Lbl_totalregistros.TabIndex = 4;
@@ -155,7 +155,7 @@
             this.Dgv_Listado.RowHeadersWidth = 51;
             this.Dgv_Listado.RowTemplate.Height = 24;
             this.Dgv_Listado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.Dgv_Listado.Size = new System.Drawing.Size(931, 461);
+            this.Dgv_Listado.Size = new System.Drawing.Size(921, 299);
             this.Dgv_Listado.TabIndex = 0;
             this.Dgv_Listado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_Listado_CellDoubleClick);
             // 
@@ -169,7 +169,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1352, 662);
+            this.tabPage2.Size = new System.Drawing.Size(1398, 479);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -241,7 +241,7 @@
             this.Btn_Nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Nuevo.ImageKey = "nuevo.png";
             this.Btn_Nuevo.ImageList = this.imageList1;
-            this.Btn_Nuevo.Location = new System.Drawing.Point(16, 781);
+            this.Btn_Nuevo.Location = new System.Drawing.Point(12, 598);
             this.Btn_Nuevo.Name = "Btn_Nuevo";
             this.Btn_Nuevo.Size = new System.Drawing.Size(94, 75);
             this.Btn_Nuevo.TabIndex = 1;
@@ -268,7 +268,7 @@
             this.Btn_Actualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Actualizar.ImageKey = "actualizar.png";
             this.Btn_Actualizar.ImageList = this.imageList1;
-            this.Btn_Actualizar.Location = new System.Drawing.Point(116, 781);
+            this.Btn_Actualizar.Location = new System.Drawing.Point(112, 598);
             this.Btn_Actualizar.Name = "Btn_Actualizar";
             this.Btn_Actualizar.Size = new System.Drawing.Size(94, 75);
             this.Btn_Actualizar.TabIndex = 2;
@@ -285,7 +285,7 @@
             this.Btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Eliminar.ImageKey = "eliminar.png";
             this.Btn_Eliminar.ImageList = this.imageList1;
-            this.Btn_Eliminar.Location = new System.Drawing.Point(216, 781);
+            this.Btn_Eliminar.Location = new System.Drawing.Point(212, 598);
             this.Btn_Eliminar.Name = "Btn_Eliminar";
             this.Btn_Eliminar.Size = new System.Drawing.Size(94, 75);
             this.Btn_Eliminar.TabIndex = 3;
@@ -302,7 +302,7 @@
             this.Btn_Reporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Reporte.ImageKey = "reporte.png";
             this.Btn_Reporte.ImageList = this.imageList1;
-            this.Btn_Reporte.Location = new System.Drawing.Point(316, 781);
+            this.Btn_Reporte.Location = new System.Drawing.Point(312, 598);
             this.Btn_Reporte.Name = "Btn_Reporte";
             this.Btn_Reporte.Size = new System.Drawing.Size(94, 75);
             this.Btn_Reporte.TabIndex = 4;
@@ -319,7 +319,7 @@
             this.Btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Salir.ImageKey = "salir.png";
             this.Btn_Salir.ImageList = this.imageList1;
-            this.Btn_Salir.Location = new System.Drawing.Point(416, 781);
+            this.Btn_Salir.Location = new System.Drawing.Point(412, 598);
             this.Btn_Salir.Name = "Btn_Salir";
             this.Btn_Salir.Size = new System.Drawing.Size(94, 75);
             this.Btn_Salir.TabIndex = 5;
@@ -336,7 +336,7 @@
             this.Pnl_titulo_form.Dock = System.Windows.Forms.DockStyle.Top;
             this.Pnl_titulo_form.Location = new System.Drawing.Point(0, 0);
             this.Pnl_titulo_form.Name = "Pnl_titulo_form";
-            this.Pnl_titulo_form.Size = new System.Drawing.Size(1848, 60);
+            this.Pnl_titulo_form.Size = new System.Drawing.Size(1447, 67);
             this.Pnl_titulo_form.TabIndex = 6;
             // 
             // label3
@@ -354,7 +354,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1848, 1045);
+            this.ClientSize = new System.Drawing.Size(1447, 703);
             this.Controls.Add(this.Pnl_titulo_form);
             this.Controls.Add(this.Btn_Salir);
             this.Controls.Add(this.Btn_Reporte);

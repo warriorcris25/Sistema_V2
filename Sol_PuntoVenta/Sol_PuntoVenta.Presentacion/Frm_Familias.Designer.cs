@@ -68,7 +68,7 @@
             this.Tbc_principal.Location = new System.Drawing.Point(12, 82);
             this.Tbc_principal.Name = "Tbc_principal";
             this.Tbc_principal.SelectedIndex = 0;
-            this.Tbc_principal.Size = new System.Drawing.Size(1365, 716);
+            this.Tbc_principal.Size = new System.Drawing.Size(1406, 517);
             this.Tbc_principal.TabIndex = 0;
             // 
             // tabPage1
@@ -81,7 +81,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1357, 678);
+            this.tabPage1.Size = new System.Drawing.Size(1398, 479);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Consultas";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -91,7 +91,7 @@
             this.Lbl_totalregistros.AutoSize = true;
             this.Lbl_totalregistros.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_totalregistros.ForeColor = System.Drawing.Color.DimGray;
-            this.Lbl_totalregistros.Location = new System.Drawing.Point(854, 580);
+            this.Lbl_totalregistros.Location = new System.Drawing.Point(854, 405);
             this.Lbl_totalregistros.Name = "Lbl_totalregistros";
             this.Lbl_totalregistros.Size = new System.Drawing.Size(130, 16);
             this.Lbl_totalregistros.TabIndex = 4;
@@ -103,7 +103,7 @@
             this.Btn_Buscar.BackColor = System.Drawing.Color.LightSeaGreen;
             this.Btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Buscar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Buscar.Location = new System.Drawing.Point(377, 50);
+            this.Btn_Buscar.Location = new System.Drawing.Point(387, 40);
             this.Btn_Buscar.Name = "Btn_Buscar";
             this.Btn_Buscar.Size = new System.Drawing.Size(100, 34);
             this.Btn_Buscar.TabIndex = 3;
@@ -113,7 +113,7 @@
             // 
             // Txt_Buscar
             // 
-            this.Txt_Buscar.Location = new System.Drawing.Point(81, 55);
+            this.Txt_Buscar.Location = new System.Drawing.Point(91, 45);
             this.Txt_Buscar.Name = "Txt_Buscar";
             this.Txt_Buscar.Size = new System.Drawing.Size(267, 22);
             this.Txt_Buscar.TabIndex = 2;
@@ -121,7 +121,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 61);
+            this.label1.Location = new System.Drawing.Point(31, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 16);
             this.label1.TabIndex = 1;
@@ -129,6 +129,9 @@
             // 
             // Dgv_listado
             // 
+            this.Dgv_listado.AllowUserToAddRows = false;
+            this.Dgv_listado.AllowUserToDeleteRows = false;
+            this.Dgv_listado.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightCyan;
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.Dgv_listado.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -146,12 +149,13 @@
             this.Dgv_listado.ColumnHeadersHeight = 35;
             this.Dgv_listado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.Dgv_listado.EnableHeadersVisualStyles = false;
-            this.Dgv_listado.Location = new System.Drawing.Point(29, 99);
+            this.Dgv_listado.Location = new System.Drawing.Point(29, 89);
             this.Dgv_listado.Name = "Dgv_listado";
+            this.Dgv_listado.ReadOnly = true;
             this.Dgv_listado.RowHeadersWidth = 51;
             this.Dgv_listado.RowTemplate.Height = 24;
             this.Dgv_listado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.Dgv_listado.Size = new System.Drawing.Size(965, 464);
+            this.Dgv_listado.Size = new System.Drawing.Size(955, 299);
             this.Dgv_listado.TabIndex = 0;
             this.Dgv_listado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_listado_CellDoubleClick);
             // 
@@ -165,7 +169,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1357, 678);
+            this.tabPage2.Size = new System.Drawing.Size(1398, 479);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -239,7 +243,7 @@
             this.Btn_Nuevo.ForeColor = System.Drawing.Color.Black;
             this.Btn_Nuevo.ImageKey = "nuevo.png";
             this.Btn_Nuevo.ImageList = this.imageList1;
-            this.Btn_Nuevo.Location = new System.Drawing.Point(16, 812);
+            this.Btn_Nuevo.Location = new System.Drawing.Point(16, 605);
             this.Btn_Nuevo.Name = "Btn_Nuevo";
             this.Btn_Nuevo.Size = new System.Drawing.Size(94, 75);
             this.Btn_Nuevo.TabIndex = 1;
@@ -267,7 +271,7 @@
             this.Btn_Actualizar.ForeColor = System.Drawing.Color.Black;
             this.Btn_Actualizar.ImageKey = "actualizar.png";
             this.Btn_Actualizar.ImageList = this.imageList1;
-            this.Btn_Actualizar.Location = new System.Drawing.Point(116, 812);
+            this.Btn_Actualizar.Location = new System.Drawing.Point(116, 605);
             this.Btn_Actualizar.Name = "Btn_Actualizar";
             this.Btn_Actualizar.Size = new System.Drawing.Size(94, 75);
             this.Btn_Actualizar.TabIndex = 2;
@@ -285,7 +289,7 @@
             this.Btn_Eliminar.ForeColor = System.Drawing.Color.Black;
             this.Btn_Eliminar.ImageKey = "eliminar.png";
             this.Btn_Eliminar.ImageList = this.imageList1;
-            this.Btn_Eliminar.Location = new System.Drawing.Point(216, 812);
+            this.Btn_Eliminar.Location = new System.Drawing.Point(216, 605);
             this.Btn_Eliminar.Name = "Btn_Eliminar";
             this.Btn_Eliminar.Size = new System.Drawing.Size(94, 75);
             this.Btn_Eliminar.TabIndex = 3;
@@ -303,7 +307,7 @@
             this.Btn_Reporte.ForeColor = System.Drawing.Color.Black;
             this.Btn_Reporte.ImageKey = "reporte.png";
             this.Btn_Reporte.ImageList = this.imageList1;
-            this.Btn_Reporte.Location = new System.Drawing.Point(316, 812);
+            this.Btn_Reporte.Location = new System.Drawing.Point(316, 605);
             this.Btn_Reporte.Name = "Btn_Reporte";
             this.Btn_Reporte.Size = new System.Drawing.Size(94, 75);
             this.Btn_Reporte.TabIndex = 4;
@@ -321,7 +325,7 @@
             this.Btn_Salir.ForeColor = System.Drawing.Color.Black;
             this.Btn_Salir.ImageKey = "salir.png";
             this.Btn_Salir.ImageList = this.imageList1;
-            this.Btn_Salir.Location = new System.Drawing.Point(416, 812);
+            this.Btn_Salir.Location = new System.Drawing.Point(416, 605);
             this.Btn_Salir.Name = "Btn_Salir";
             this.Btn_Salir.Size = new System.Drawing.Size(94, 75);
             this.Btn_Salir.TabIndex = 5;
@@ -338,7 +342,7 @@
             this.Pnl_titulo_form.Dock = System.Windows.Forms.DockStyle.Top;
             this.Pnl_titulo_form.Location = new System.Drawing.Point(0, 0);
             this.Pnl_titulo_form.Name = "Pnl_titulo_form";
-            this.Pnl_titulo_form.Size = new System.Drawing.Size(1786, 80);
+            this.Pnl_titulo_form.Size = new System.Drawing.Size(1435, 68);
             this.Pnl_titulo_form.TabIndex = 6;
             // 
             // label3
@@ -356,7 +360,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1786, 973);
+            this.ClientSize = new System.Drawing.Size(1435, 704);
             this.Controls.Add(this.Pnl_titulo_form);
             this.Controls.Add(this.Btn_Salir);
             this.Controls.Add(this.Btn_Reporte);

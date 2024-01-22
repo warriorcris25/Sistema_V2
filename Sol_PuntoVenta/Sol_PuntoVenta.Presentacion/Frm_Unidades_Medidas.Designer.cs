@@ -67,7 +67,7 @@
             this.Pnl_titulo_form.Dock = System.Windows.Forms.DockStyle.Top;
             this.Pnl_titulo_form.Location = new System.Drawing.Point(0, 0);
             this.Pnl_titulo_form.Name = "Pnl_titulo_form";
-            this.Pnl_titulo_form.Size = new System.Drawing.Size(1852, 100);
+            this.Pnl_titulo_form.Size = new System.Drawing.Size(1442, 68);
             this.Pnl_titulo_form.TabIndex = 20;
             // 
             // label3
@@ -75,7 +75,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(42, 21);
+            this.label3.Location = new System.Drawing.Point(26, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(208, 18);
             this.label3.TabIndex = 0;
@@ -89,7 +89,7 @@
             this.Btn_Salir.ForeColor = System.Drawing.Color.Black;
             this.Btn_Salir.ImageKey = "salir.png";
             this.Btn_Salir.ImageList = this.imageList1;
-            this.Btn_Salir.Location = new System.Drawing.Point(404, 826);
+            this.Btn_Salir.Location = new System.Drawing.Point(411, 598);
             this.Btn_Salir.Name = "Btn_Salir";
             this.Btn_Salir.Size = new System.Drawing.Size(94, 75);
             this.Btn_Salir.TabIndex = 19;
@@ -117,7 +117,7 @@
             this.Btn_Reporte.ForeColor = System.Drawing.Color.Black;
             this.Btn_Reporte.ImageKey = "reporte.png";
             this.Btn_Reporte.ImageList = this.imageList1;
-            this.Btn_Reporte.Location = new System.Drawing.Point(304, 826);
+            this.Btn_Reporte.Location = new System.Drawing.Point(311, 598);
             this.Btn_Reporte.Name = "Btn_Reporte";
             this.Btn_Reporte.Size = new System.Drawing.Size(94, 75);
             this.Btn_Reporte.TabIndex = 18;
@@ -135,7 +135,7 @@
             this.Btn_Eliminar.ForeColor = System.Drawing.Color.Black;
             this.Btn_Eliminar.ImageKey = "eliminar.png";
             this.Btn_Eliminar.ImageList = this.imageList1;
-            this.Btn_Eliminar.Location = new System.Drawing.Point(204, 826);
+            this.Btn_Eliminar.Location = new System.Drawing.Point(211, 598);
             this.Btn_Eliminar.Name = "Btn_Eliminar";
             this.Btn_Eliminar.Size = new System.Drawing.Size(94, 75);
             this.Btn_Eliminar.TabIndex = 17;
@@ -153,7 +153,7 @@
             this.Btn_Actualizar.ForeColor = System.Drawing.Color.Black;
             this.Btn_Actualizar.ImageKey = "actualizar.png";
             this.Btn_Actualizar.ImageList = this.imageList1;
-            this.Btn_Actualizar.Location = new System.Drawing.Point(104, 826);
+            this.Btn_Actualizar.Location = new System.Drawing.Point(111, 598);
             this.Btn_Actualizar.Name = "Btn_Actualizar";
             this.Btn_Actualizar.Size = new System.Drawing.Size(94, 75);
             this.Btn_Actualizar.TabIndex = 16;
@@ -171,7 +171,7 @@
             this.Btn_Nuevo.ForeColor = System.Drawing.Color.Black;
             this.Btn_Nuevo.ImageKey = "nuevo.png";
             this.Btn_Nuevo.ImageList = this.imageList1;
-            this.Btn_Nuevo.Location = new System.Drawing.Point(4, 826);
+            this.Btn_Nuevo.Location = new System.Drawing.Point(11, 598);
             this.Btn_Nuevo.Name = "Btn_Nuevo";
             this.Btn_Nuevo.Size = new System.Drawing.Size(94, 75);
             this.Btn_Nuevo.TabIndex = 15;
@@ -186,10 +186,10 @@
             this.Tbc_principal.Controls.Add(this.tabPage1);
             this.Tbc_principal.Controls.Add(this.tabPage2);
             this.Tbc_principal.ItemSize = new System.Drawing.Size(100, 30);
-            this.Tbc_principal.Location = new System.Drawing.Point(0, 103);
+            this.Tbc_principal.Location = new System.Drawing.Point(7, 76);
             this.Tbc_principal.Name = "Tbc_principal";
             this.Tbc_principal.SelectedIndex = 0;
-            this.Tbc_principal.Size = new System.Drawing.Size(1365, 716);
+            this.Tbc_principal.Size = new System.Drawing.Size(1407, 516);
             this.Tbc_principal.TabIndex = 14;
             // 
             // tabPage1
@@ -202,7 +202,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1357, 678);
+            this.tabPage1.Size = new System.Drawing.Size(1399, 478);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Consultas";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -212,7 +212,7 @@
             this.Lbl_totalregistros.AutoSize = true;
             this.Lbl_totalregistros.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_totalregistros.ForeColor = System.Drawing.Color.DimGray;
-            this.Lbl_totalregistros.Location = new System.Drawing.Point(854, 580);
+            this.Lbl_totalregistros.Location = new System.Drawing.Point(864, 416);
             this.Lbl_totalregistros.Name = "Lbl_totalregistros";
             this.Lbl_totalregistros.Size = new System.Drawing.Size(130, 16);
             this.Lbl_totalregistros.TabIndex = 4;
@@ -250,6 +250,9 @@
             // 
             // Dgv_Listado
             // 
+            this.Dgv_Listado.AllowUserToAddRows = false;
+            this.Dgv_Listado.AllowUserToDeleteRows = false;
+            this.Dgv_Listado.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightCyan;
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.Dgv_Listado.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -269,10 +272,11 @@
             this.Dgv_Listado.EnableHeadersVisualStyles = false;
             this.Dgv_Listado.Location = new System.Drawing.Point(29, 99);
             this.Dgv_Listado.Name = "Dgv_Listado";
+            this.Dgv_Listado.ReadOnly = true;
             this.Dgv_Listado.RowHeadersWidth = 51;
             this.Dgv_Listado.RowTemplate.Height = 24;
             this.Dgv_Listado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.Dgv_Listado.Size = new System.Drawing.Size(965, 464);
+            this.Dgv_Listado.Size = new System.Drawing.Size(965, 298);
             this.Dgv_Listado.TabIndex = 0;
             // 
             // tabPage2
@@ -285,7 +289,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1357, 678);
+            this.tabPage2.Size = new System.Drawing.Size(1399, 478);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -354,7 +358,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1852, 1054);
+            this.ClientSize = new System.Drawing.Size(1442, 703);
             this.Controls.Add(this.Pnl_titulo_form);
             this.Controls.Add(this.Btn_Salir);
             this.Controls.Add(this.Btn_Reporte);

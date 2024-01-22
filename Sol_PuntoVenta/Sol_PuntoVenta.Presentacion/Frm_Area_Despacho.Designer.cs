@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Area_Despacho));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Area_Despacho));
             this.Pnl_titulo_form = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.Btn_Salir = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.Btn_Reporte = new System.Windows.Forms.Button();
             this.Btn_Eliminar = new System.Windows.Forms.Button();
             this.Btn_Actualizar = new System.Windows.Forms.Button();
@@ -47,14 +48,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Dgv_listado = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.Txt_impresora = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.Btn_Retornar = new System.Windows.Forms.Button();
             this.Btn_Guardar = new System.Windows.Forms.Button();
             this.Btn_Cancelar = new System.Windows.Forms.Button();
             this.Txt_Descripcion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.Txt_impresora = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.Pnl_titulo_form.SuspendLayout();
             this.Tbc_principal.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -69,7 +69,7 @@
             this.Pnl_titulo_form.Dock = System.Windows.Forms.DockStyle.Top;
             this.Pnl_titulo_form.Location = new System.Drawing.Point(0, 0);
             this.Pnl_titulo_form.Name = "Pnl_titulo_form";
-            this.Pnl_titulo_form.Size = new System.Drawing.Size(2237, 100);
+            this.Pnl_titulo_form.Size = new System.Drawing.Size(1461, 68);
             this.Pnl_titulo_form.TabIndex = 13;
             // 
             // label3
@@ -77,9 +77,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(31, 42);
+            this.label3.Location = new System.Drawing.Point(31, 24);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(223, 23);
+            this.label3.Size = new System.Drawing.Size(178, 18);
             this.label3.TabIndex = 0;
             this.label3.Text = "AREA DE DESPACHO";
             // 
@@ -91,7 +91,7 @@
             this.Btn_Salir.ForeColor = System.Drawing.Color.Black;
             this.Btn_Salir.ImageKey = "salir.png";
             this.Btn_Salir.ImageList = this.imageList1;
-            this.Btn_Salir.Location = new System.Drawing.Point(416, 836);
+            this.Btn_Salir.Location = new System.Drawing.Point(415, 629);
             this.Btn_Salir.Name = "Btn_Salir";
             this.Btn_Salir.Size = new System.Drawing.Size(94, 75);
             this.Btn_Salir.TabIndex = 12;
@@ -101,6 +101,16 @@
             this.Btn_Salir.UseVisualStyleBackColor = false;
             this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click);
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "nuevo.png");
+            this.imageList1.Images.SetKeyName(1, "actualizar.png");
+            this.imageList1.Images.SetKeyName(2, "eliminar.png");
+            this.imageList1.Images.SetKeyName(3, "reporte.png");
+            this.imageList1.Images.SetKeyName(4, "salir.png");
+            // 
             // Btn_Reporte
             // 
             this.Btn_Reporte.BackColor = System.Drawing.Color.Cyan;
@@ -109,7 +119,7 @@
             this.Btn_Reporte.ForeColor = System.Drawing.Color.Black;
             this.Btn_Reporte.ImageKey = "reporte.png";
             this.Btn_Reporte.ImageList = this.imageList1;
-            this.Btn_Reporte.Location = new System.Drawing.Point(316, 836);
+            this.Btn_Reporte.Location = new System.Drawing.Point(315, 629);
             this.Btn_Reporte.Name = "Btn_Reporte";
             this.Btn_Reporte.Size = new System.Drawing.Size(94, 75);
             this.Btn_Reporte.TabIndex = 11;
@@ -127,7 +137,7 @@
             this.Btn_Eliminar.ForeColor = System.Drawing.Color.Black;
             this.Btn_Eliminar.ImageKey = "eliminar.png";
             this.Btn_Eliminar.ImageList = this.imageList1;
-            this.Btn_Eliminar.Location = new System.Drawing.Point(216, 836);
+            this.Btn_Eliminar.Location = new System.Drawing.Point(215, 629);
             this.Btn_Eliminar.Name = "Btn_Eliminar";
             this.Btn_Eliminar.Size = new System.Drawing.Size(94, 75);
             this.Btn_Eliminar.TabIndex = 10;
@@ -145,7 +155,7 @@
             this.Btn_Actualizar.ForeColor = System.Drawing.Color.Black;
             this.Btn_Actualizar.ImageKey = "actualizar.png";
             this.Btn_Actualizar.ImageList = this.imageList1;
-            this.Btn_Actualizar.Location = new System.Drawing.Point(116, 836);
+            this.Btn_Actualizar.Location = new System.Drawing.Point(115, 629);
             this.Btn_Actualizar.Name = "Btn_Actualizar";
             this.Btn_Actualizar.Size = new System.Drawing.Size(94, 75);
             this.Btn_Actualizar.TabIndex = 9;
@@ -163,7 +173,7 @@
             this.Btn_Nuevo.ForeColor = System.Drawing.Color.Black;
             this.Btn_Nuevo.ImageKey = "nuevo.png";
             this.Btn_Nuevo.ImageList = this.imageList1;
-            this.Btn_Nuevo.Location = new System.Drawing.Point(16, 836);
+            this.Btn_Nuevo.Location = new System.Drawing.Point(15, 629);
             this.Btn_Nuevo.Name = "Btn_Nuevo";
             this.Btn_Nuevo.Size = new System.Drawing.Size(94, 75);
             this.Btn_Nuevo.TabIndex = 8;
@@ -181,7 +191,7 @@
             this.Tbc_principal.Location = new System.Drawing.Point(12, 106);
             this.Tbc_principal.Name = "Tbc_principal";
             this.Tbc_principal.SelectedIndex = 0;
-            this.Tbc_principal.Size = new System.Drawing.Size(1365, 716);
+            this.Tbc_principal.Size = new System.Drawing.Size(1356, 505);
             this.Tbc_principal.TabIndex = 7;
             // 
             // tabPage1
@@ -194,7 +204,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1357, 678);
+            this.tabPage1.Size = new System.Drawing.Size(1348, 467);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Consultas";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -204,7 +214,7 @@
             this.Lbl_totalregistros.AutoSize = true;
             this.Lbl_totalregistros.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_totalregistros.ForeColor = System.Drawing.Color.DimGray;
-            this.Lbl_totalregistros.Location = new System.Drawing.Point(1166, 580);
+            this.Lbl_totalregistros.Location = new System.Drawing.Point(1166, 408);
             this.Lbl_totalregistros.Name = "Lbl_totalregistros";
             this.Lbl_totalregistros.Size = new System.Drawing.Size(130, 16);
             this.Lbl_totalregistros.TabIndex = 4;
@@ -216,7 +226,7 @@
             this.Btn_Buscar.BackColor = System.Drawing.Color.LightSeaGreen;
             this.Btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Buscar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Buscar.Location = new System.Drawing.Point(377, 50);
+            this.Btn_Buscar.Location = new System.Drawing.Point(377, 42);
             this.Btn_Buscar.Name = "Btn_Buscar";
             this.Btn_Buscar.Size = new System.Drawing.Size(100, 34);
             this.Btn_Buscar.TabIndex = 3;
@@ -226,7 +236,7 @@
             // 
             // Txt_Buscar
             // 
-            this.Txt_Buscar.Location = new System.Drawing.Point(81, 55);
+            this.Txt_Buscar.Location = new System.Drawing.Point(99, 47);
             this.Txt_Buscar.Name = "Txt_Buscar";
             this.Txt_Buscar.Size = new System.Drawing.Size(267, 22);
             this.Txt_Buscar.TabIndex = 2;
@@ -234,7 +244,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 61);
+            this.label1.Location = new System.Drawing.Point(31, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 16);
             this.label1.TabIndex = 1;
@@ -242,6 +252,9 @@
             // 
             // Dgv_listado
             // 
+            this.Dgv_listado.AllowUserToAddRows = false;
+            this.Dgv_listado.AllowUserToDeleteRows = false;
+            this.Dgv_listado.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightCyan;
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.Dgv_listado.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -259,12 +272,13 @@
             this.Dgv_listado.ColumnHeadersHeight = 35;
             this.Dgv_listado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.Dgv_listado.EnableHeadersVisualStyles = false;
-            this.Dgv_listado.Location = new System.Drawing.Point(29, 99);
+            this.Dgv_listado.Location = new System.Drawing.Point(29, 91);
             this.Dgv_listado.Name = "Dgv_listado";
+            this.Dgv_listado.ReadOnly = true;
             this.Dgv_listado.RowHeadersWidth = 51;
             this.Dgv_listado.RowTemplate.Height = 24;
             this.Dgv_listado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.Dgv_listado.Size = new System.Drawing.Size(1267, 464);
+            this.Dgv_listado.Size = new System.Drawing.Size(1267, 299);
             this.Dgv_listado.TabIndex = 0;
             this.Dgv_listado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_listado_CellDoubleClick);
             // 
@@ -280,10 +294,28 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1357, 678);
+            this.tabPage2.Size = new System.Drawing.Size(1348, 467);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // Txt_impresora
+            // 
+            this.Txt_impresora.Location = new System.Drawing.Point(186, 101);
+            this.Txt_impresora.MaxLength = 50;
+            this.Txt_impresora.Name = "Txt_impresora";
+            this.Txt_impresora.ReadOnly = true;
+            this.Txt_impresora.Size = new System.Drawing.Size(351, 22);
+            this.Txt_impresora.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(92, 103);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(87, 16);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Impresora: (*)";
             // 
             // Btn_Retornar
             // 
@@ -345,39 +377,11 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Area de despacho: (*)";
             // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "nuevo.png");
-            this.imageList1.Images.SetKeyName(1, "actualizar.png");
-            this.imageList1.Images.SetKeyName(2, "eliminar.png");
-            this.imageList1.Images.SetKeyName(3, "reporte.png");
-            this.imageList1.Images.SetKeyName(4, "salir.png");
-            // 
-            // Txt_impresora
-            // 
-            this.Txt_impresora.Location = new System.Drawing.Point(186, 101);
-            this.Txt_impresora.MaxLength = 50;
-            this.Txt_impresora.Name = "Txt_impresora";
-            this.Txt_impresora.ReadOnly = true;
-            this.Txt_impresora.Size = new System.Drawing.Size(351, 22);
-            this.Txt_impresora.TabIndex = 8;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(92, 103);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 16);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Impresora: (*)";
-            // 
             // Frm_Area_Despacho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2237, 1228);
+            this.ClientSize = new System.Drawing.Size(1461, 751);
             this.Controls.Add(this.Pnl_titulo_form);
             this.Controls.Add(this.Btn_Salir);
             this.Controls.Add(this.Btn_Reporte);
