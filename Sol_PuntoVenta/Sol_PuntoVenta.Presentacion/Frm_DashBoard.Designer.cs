@@ -724,7 +724,7 @@
             this.Grb_fechayhora.Controls.Add(this.Lbl_fecha);
             this.Grb_fechayhora.Controls.Add(this.Lbl_Hora);
             this.Grb_fechayhora.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Grb_fechayhora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Grb_fechayhora.ForeColor = System.Drawing.Color.Black;
             this.Grb_fechayhora.Location = new System.Drawing.Point(1169, 1);
             this.Grb_fechayhora.Name = "Grb_fechayhora";
             this.Grb_fechayhora.Size = new System.Drawing.Size(357, 117);
