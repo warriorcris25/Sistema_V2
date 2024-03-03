@@ -23,5 +23,15 @@ namespace Sol_PuntoVenta.Negocio
             D_Registro_Pedidos Datos = new D_Registro_Pedidos();
             return Datos.Estado_turno_pv(nCodigo_pv);
         }
+        public static DataTable Mostrar_me_rp(int nCodigo_pv)
+        {
+            D_Registro_Pedidos Datos = new D_Registro_Pedidos();
+            return Datos.Mostrar_me_rp(nCodigo_pv);
+        }
+        public static Byte[] imagen_estado_me(int nEstado)
+        {
+            D_Registro_Pedidos Datos = new D_Registro_Pedidos();
+            return Datos.imagen_estado_me(nEstado);
+        }
     }
 }

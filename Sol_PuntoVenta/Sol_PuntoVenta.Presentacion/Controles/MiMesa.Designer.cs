@@ -30,17 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MiMesa));
             this.Pnl_mesa = new System.Windows.Forms.Panel();
-            this.Pct_imagenmesa = new System.Windows.Forms.PictureBox();
-            this.Pct_estado = new System.Windows.Forms.PictureBox();
-            this.Lbl_descricipcion_me = new System.Windows.Forms.Label();
-            this.Lbl_codigo_me = new System.Windows.Forms.Label();
-            this.Lbl_codigo_pv = new System.Windows.Forms.Label();
-            this.Lbl_descripcion_pv = new System.Windows.Forms.Label();
-            this.Lbl_codigo_us = new System.Windows.Forms.Label();
             this.Lbl_codigo_tu = new System.Windows.Forms.Label();
+            this.Lbl_codigo_us = new System.Windows.Forms.Label();
+            this.Lbl_descripcion_pv = new System.Windows.Forms.Label();
+            this.Lbl_codigo_pv = new System.Windows.Forms.Label();
+            this.Lbl_codigo_me = new System.Windows.Forms.Label();
+            this.Lbl_descricipcion_me = new System.Windows.Forms.Label();
+            this.Pct_estado = new System.Windows.Forms.PictureBox();
+            this.Pct_imagenmesa = new System.Windows.Forms.PictureBox();
             this.Pnl_mesa.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Pct_imagenmesa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pct_estado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pct_imagenmesa)).BeginInit();
             this.SuspendLayout();
             // 
             // Pnl_mesa
@@ -58,25 +58,50 @@
             this.Pnl_mesa.Size = new System.Drawing.Size(165, 173);
             this.Pnl_mesa.TabIndex = 0;
             // 
-            // Pct_imagenmesa
+            // Lbl_codigo_tu
             // 
-            this.Pct_imagenmesa.Image = ((System.Drawing.Image)(resources.GetObject("Pct_imagenmesa.Image")));
-            this.Pct_imagenmesa.Location = new System.Drawing.Point(24, 30);
-            this.Pct_imagenmesa.Name = "Pct_imagenmesa";
-            this.Pct_imagenmesa.Size = new System.Drawing.Size(104, 111);
-            this.Pct_imagenmesa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Pct_imagenmesa.TabIndex = 0;
-            this.Pct_imagenmesa.TabStop = false;
+            this.Lbl_codigo_tu.Location = new System.Drawing.Point(129, 97);
+            this.Lbl_codigo_tu.Name = "Lbl_codigo_tu";
+            this.Lbl_codigo_tu.Size = new System.Drawing.Size(33, 24);
+            this.Lbl_codigo_tu.TabIndex = 7;
+            this.Lbl_codigo_tu.Text = "Lbl_codigo_tu";
+            this.Lbl_codigo_tu.Visible = false;
             // 
-            // Pct_estado
+            // Lbl_codigo_us
             // 
-            this.Pct_estado.Image = ((System.Drawing.Image)(resources.GetObject("Pct_estado.Image")));
-            this.Pct_estado.Location = new System.Drawing.Point(61, 9);
-            this.Pct_estado.Name = "Pct_estado";
-            this.Pct_estado.Size = new System.Drawing.Size(31, 30);
-            this.Pct_estado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Pct_estado.TabIndex = 1;
-            this.Pct_estado.TabStop = false;
+            this.Lbl_codigo_us.Location = new System.Drawing.Point(129, 62);
+            this.Lbl_codigo_us.Name = "Lbl_codigo_us";
+            this.Lbl_codigo_us.Size = new System.Drawing.Size(33, 24);
+            this.Lbl_codigo_us.TabIndex = 6;
+            this.Lbl_codigo_us.Text = "Lbl_codigo_us";
+            this.Lbl_codigo_us.Visible = false;
+            // 
+            // Lbl_descripcion_pv
+            // 
+            this.Lbl_descripcion_pv.Location = new System.Drawing.Point(131, 34);
+            this.Lbl_descripcion_pv.Name = "Lbl_descripcion_pv";
+            this.Lbl_descripcion_pv.Size = new System.Drawing.Size(31, 24);
+            this.Lbl_descripcion_pv.TabIndex = 5;
+            this.Lbl_descripcion_pv.Text = "Lbl_descripcion_pv";
+            this.Lbl_descripcion_pv.Visible = false;
+            // 
+            // Lbl_codigo_pv
+            // 
+            this.Lbl_codigo_pv.Location = new System.Drawing.Point(128, 2);
+            this.Lbl_codigo_pv.Name = "Lbl_codigo_pv";
+            this.Lbl_codigo_pv.Size = new System.Drawing.Size(36, 27);
+            this.Lbl_codigo_pv.TabIndex = 4;
+            this.Lbl_codigo_pv.Text = "Lbl_codigo_pv";
+            this.Lbl_codigo_pv.Visible = false;
+            // 
+            // Lbl_codigo_me
+            // 
+            this.Lbl_codigo_me.Location = new System.Drawing.Point(3, 2);
+            this.Lbl_codigo_me.Name = "Lbl_codigo_me";
+            this.Lbl_codigo_me.Size = new System.Drawing.Size(36, 27);
+            this.Lbl_codigo_me.TabIndex = 3;
+            this.Lbl_codigo_me.Text = "Lbl_codigo_me";
+            this.Lbl_codigo_me.Visible = false;
             // 
             // Lbl_descricipcion_me
             // 
@@ -88,50 +113,26 @@
             this.Lbl_descricipcion_me.Text = "Mesa X";
             this.Lbl_descricipcion_me.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Lbl_codigo_me
+            // Pct_estado
             // 
-            this.Lbl_codigo_me.Location = new System.Drawing.Point(3, 2);
-            this.Lbl_codigo_me.Name = "Lbl_codigo_me";
-            this.Lbl_codigo_me.Size = new System.Drawing.Size(36, 27);
-            this.Lbl_codigo_me.TabIndex = 3;
-            this.Lbl_codigo_me.Text = "Lbl_codigo_me";
-            this.Lbl_codigo_me.Visible = false;
+            this.Pct_estado.Image = ((System.Drawing.Image)(resources.GetObject("Pct_estado.Image")));
+            this.Pct_estado.Location = new System.Drawing.Point(61, 9);
+            this.Pct_estado.Name = "Pct_estado";
+            this.Pct_estado.Size = new System.Drawing.Size(31, 30);
+            this.Pct_estado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pct_estado.TabIndex = 1;
+            this.Pct_estado.TabStop = false;
             // 
-            // Lbl_codigo_pv
+            // Pct_imagenmesa
             // 
-            this.Lbl_codigo_pv.Location = new System.Drawing.Point(128, 2);
-            this.Lbl_codigo_pv.Name = "Lbl_codigo_pv";
-            this.Lbl_codigo_pv.Size = new System.Drawing.Size(36, 27);
-            this.Lbl_codigo_pv.TabIndex = 4;
-            this.Lbl_codigo_pv.Text = "Lbl_codigo_pv";
-            this.Lbl_codigo_pv.Visible = false;
-            // 
-            // Lbl_descripcion_pv
-            // 
-            this.Lbl_descripcion_pv.Location = new System.Drawing.Point(131, 34);
-            this.Lbl_descripcion_pv.Name = "Lbl_descripcion_pv";
-            this.Lbl_descripcion_pv.Size = new System.Drawing.Size(31, 24);
-            this.Lbl_descripcion_pv.TabIndex = 5;
-            this.Lbl_descripcion_pv.Text = "Lbl_descripcion_pv";
-            this.Lbl_descripcion_pv.Visible = false;
-            // 
-            // Lbl_codigo_us
-            // 
-            this.Lbl_codigo_us.Location = new System.Drawing.Point(129, 62);
-            this.Lbl_codigo_us.Name = "Lbl_codigo_us";
-            this.Lbl_codigo_us.Size = new System.Drawing.Size(33, 24);
-            this.Lbl_codigo_us.TabIndex = 6;
-            this.Lbl_codigo_us.Text = "Lbl_codigo_us";
-            this.Lbl_codigo_us.Visible = false;
-            // 
-            // Lbl_codigo_tu
-            // 
-            this.Lbl_codigo_tu.Location = new System.Drawing.Point(129, 97);
-            this.Lbl_codigo_tu.Name = "Lbl_codigo_tu";
-            this.Lbl_codigo_tu.Size = new System.Drawing.Size(33, 24);
-            this.Lbl_codigo_tu.TabIndex = 7;
-            this.Lbl_codigo_tu.Text = "Lbl_codigo_tu";
-            this.Lbl_codigo_tu.Visible = false;
+            this.Pct_imagenmesa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Pct_imagenmesa.Image = ((System.Drawing.Image)(resources.GetObject("Pct_imagenmesa.Image")));
+            this.Pct_imagenmesa.Location = new System.Drawing.Point(24, 30);
+            this.Pct_imagenmesa.Name = "Pct_imagenmesa";
+            this.Pct_imagenmesa.Size = new System.Drawing.Size(104, 111);
+            this.Pct_imagenmesa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pct_imagenmesa.TabIndex = 0;
+            this.Pct_imagenmesa.TabStop = false;
             // 
             // MiMesa
             // 
@@ -141,8 +142,8 @@
             this.Name = "MiMesa";
             this.Size = new System.Drawing.Size(175, 187);
             this.Pnl_mesa.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Pct_imagenmesa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pct_estado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pct_imagenmesa)).EndInit();
             this.ResumeLayout(false);
 
         }
