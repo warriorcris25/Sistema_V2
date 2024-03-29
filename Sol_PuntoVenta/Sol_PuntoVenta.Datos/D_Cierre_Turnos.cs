@@ -50,7 +50,7 @@ namespace Sol_PuntoVenta.Datos
                 Comando.Parameters.Add("@nCodigo_pv", SqlDbType.Int).Value = nCodigo_pv;
                 Comando.Parameters.Add("@nCodigo_tu", SqlDbType.Int).Value = nCOdigo_tu;
                 SqlCon.Open();
-                Rpta = Comando.ExecuteNonQuery() >= 1 ? "OK" : "Nose pudo cerrar el turno";
+                Rpta = Comando.ExecuteNonQuery() >= 1 ? "Ok" : "Nose pudo cerrar el turno";
             }
             catch (Exception ex)
             {

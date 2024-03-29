@@ -56,18 +56,11 @@ namespace Sol_PuntoVenta.Presentacion.Procesos
             }
             else
             {
-                //this.nCodigo = Convert.ToInt32(Dgv_1.CurrentRow.Cells["codigo_pv"].Value);
-                //Txt_Descripcion.Text = Convert.ToString(Dgv_1.CurrentRow.Cells["descripcion_pv"].Value);
+                //this.nCodigo_pv = Convert.ToInt32(Dgv_1.CurrentRow.Cells["codigo_pv"].Value);
+                //Txt_Descripcion_pv.Text = Convert.ToString(Dgv_1.CurrentRow.Cells["descripcion_pv"].Value);
             }
         }
-        #endregion
-
-        private void Frm_Cierres_turnos_Load(object sender, EventArgs e)
-        {
-            this.Listado_pv("%");
-        }
-
-        private void Dgv_1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void Estado_gestion_turno_pv(int nCodigo_pv)
         {
             DataTable Tablax = new DataTable();
             nCodigo_pv = Convert.ToInt32(Dgv_1.CurrentRow.Cells["codigo_pv"].Value);
@@ -106,46 +99,115 @@ namespace Sol_PuntoVenta.Presentacion.Procesos
                 Txt_puntoventa.Text = "";
             }
         }
+        #endregion
+
+        private void Frm_Cierres_turnos_Load(object sender, EventArgs e)
+        {
+            this.Listado_pv("%");
+        }
+
+        private void Dgv_1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            this.Estado_gestion_turno_pv(this.nCodigo_pv);
+            
+        }
 
         private void Btn_abrirturno_Click(object sender, EventArgs e)
         {
-            try
+            this.nCodigo_pv = Convert.ToInt32(Dgv_1.CurrentRow.Cells["codigo_pv"].Value);
+            if (this.nCodigo_pv > 0)
             {
-                DialogResult Opcion;
-                Opcion = MessageBox.Show("¿Abrir turno siguiente ahora?", 
-                                        "Aviso del Sistema", 
-                                        MessageBoxButtons.YesNo, 
-                                        MessageBoxIcon.Question);
-                if (Opcion == DialogResult.Yes)
+                try
                 {
-                    string Rpta;
-                    string cFecha_ct = Txt_fecha_trabajo.Text.Trim();
-                    if (cFecha_ct == string.Empty) //Asigno fecha de hoy y turno 1 en caso de no tener historial de cierre del pv
+                    DialogResult Opcion;
+                    Opcion = MessageBox.Show("¿Abrir turno siguiente ahora?",
+                                            "Aviso del Sistema",
+                                            MessageBoxButtons.YesNo,
+                                            MessageBoxIcon.Question);
+                    if (Opcion == DialogResult.Yes)
                     {
-                        cFecha_ct = DateTime.Now.ToString("dd-MM-yyyy");
-                        this.nCodigo_tu = 1;
-                    }
-                    else
-                    {
-                        if (this.nCodigo_tu==1)
+                        string Rpta;
+                        string cFecha_ct = Txt_fecha_trabajo.Text.Trim();
+                        if (cFecha_ct == string.Empty) //Asigno fecha de hoy y turno 1 en caso de no tener historial de cierre del pv
                         {
-                            this.nCodigo_tu = 2;
-                        }
-                        else if(this.nCodigo_tu==2)
-                        {
-                            DateTime Nueva_fecha = Convert.ToDateTime(cFecha_ct);
-                            Nueva_fecha = Nueva_fecha.AddDays(1);
-                            cFecha_ct = Convert.ToString(Nueva_fecha);
-                            cFecha_ct.Substring(0, cFecha_ct.Length - 9);
+                            cFecha_ct = DateTime.Now.ToString("dd-MM-yyyy");
                             this.nCodigo_tu = 1;
+                        }
+                        else
+                        {
+                            if (this.nCodigo_tu == 1)
+                            {
+                                this.nCodigo_tu = 2;
+                            }
+                            else if (this.nCodigo_tu == 2)
+                            {
+                                DateTime Nueva_fecha = Convert.ToDateTime(cFecha_ct);
+                                Nueva_fecha = Nueva_fecha.AddDays(1);
+                                cFecha_ct = Convert.ToString(Nueva_fecha);
+                                cFecha_ct.Substring(0, cFecha_ct.Length - 9);
+                                this.nCodigo_tu = 1;
+                            }
+                        }
+                        Rpta = N_Cierres_Turnos.Abrir_turno(cFecha_ct, this.nCodigo_pv, this.nCodigo_tu);
+                        if (Rpta.Equals("OK"))
+                        {
+                            this.Estado_gestion_turno_pv(this.nCodigo_pv);
+                            MessageBox.Show("El turno ha sido abierto correctamente",
+                                            "Aviso del Sistema",
+                                            MessageBoxButtons.OK,
+                                            MessageBoxIcon.Exclamation);
+                        }
+                        else
+                        {
+                            MessageBox.Show(Rpta, "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                 }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message + ex.StackTrace);
+                }
+            }
+            else
+            {
+                MessageBox.Show("No setiene datos del punto de venta que se quiere abrir",
+                                "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void Btn_cerrarturno_Click(object sender, EventArgs e)
+        {
+            
+            try
+            {
+                DialogResult Opcion;
+                Opcion = MessageBox.Show("¿Cerrar el turno ahora?", 
+                                         "Aviso del Sistema", 
+                                         MessageBoxButtons.YesNo, 
+                                         MessageBoxIcon.Question);
+                if (Opcion==DialogResult.Yes)
+                {
+                    string Rpta;
+                    string cFecha_ct = Txt_fecha_trabajo.Text.Trim();
+                    Rpta = N_Cierres_Turnos.Cerrar_turno(cFecha_ct,this.nCodigo_pv,this.nCodigo_tu);
+                    if (Rpta.Equals("Ok"))
+                    {
+                        this.Estado_gestion_turno_pv(this.nCodigo_pv);
+                        MessageBox.Show("El turno hasido cerrado correctamente", "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                    else
+                    {
+                        MessageBox.Show(Rpta, "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                
             }
             catch (Exception ex)
             {
 
-                MessageBox.Show(ex.Message + ex.StackTrace);
+                MessageBox.Show(ex.Message + ex.StackTrace, "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

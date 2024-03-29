@@ -244,5 +244,10 @@ namespace Sol_PuntoVenta.Presentacion
         {
             OpenForm(new Procesos.Frm_Cierres_turnos());
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

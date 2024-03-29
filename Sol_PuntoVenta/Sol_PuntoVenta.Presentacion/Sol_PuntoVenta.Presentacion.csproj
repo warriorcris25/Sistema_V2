@@ -137,6 +137,12 @@
     <Compile Include="Procesos\Frm_Cierres_turnos.Designer.cs">
       <DependentUpon>Frm_Cierres_turnos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\Frm_Mesa_Abierta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Frm_Mesa_Abierta.Designer.cs">
+      <DependentUpon>Frm_Mesa_Abierta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\Frm_Registro_Pedidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,6 +237,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\Frm_Cierres_turnos.resx">
       <DependentUpon>Frm_Cierres_turnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Frm_Mesa_Abierta.resx">
+      <DependentUpon>Frm_Mesa_Abierta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\Frm_Registro_Pedidos.resx">
       <DependentUpon>Frm_Registro_Pedidos.cs</DependentUpon>

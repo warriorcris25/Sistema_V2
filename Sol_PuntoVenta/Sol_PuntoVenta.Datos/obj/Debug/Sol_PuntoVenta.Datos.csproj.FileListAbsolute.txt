@@ -4,6 +4,6 @@ D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Datos
 D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Datos\bin\Debug\Sol_PuntoVenta.Entidades.pdb
 D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.csproj.AssemblyReference.cache
 D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.csproj.CoreCompileInputs.cache
-D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.csproj.CopyComplete
 D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.dll
 D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Datos\obj\Debug\Sol_PuntoVenta.Datos.pdb
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Datos\obj\Debug\Sol_Punt.1E5EACC5.Up2Date
