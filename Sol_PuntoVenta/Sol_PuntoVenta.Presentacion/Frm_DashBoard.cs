@@ -239,5 +239,10 @@ namespace Sol_PuntoVenta.Presentacion
         {
             OpenForm(new Procesos.Frm_Registro_Pedidos());
         }
+
+        private void PR_gestionturnos_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Procesos.Frm_Cierres_turnos());
+        }
     }
 }

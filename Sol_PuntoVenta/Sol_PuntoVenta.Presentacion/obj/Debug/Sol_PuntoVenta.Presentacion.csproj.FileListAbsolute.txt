@@ -86,3 +86,4 @@ D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Prese
 D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\bin\Debug\FontAwesome.Sharp.dll
 D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Procesos.Frm_Registro_Pedidos.resources
 D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Controles.MiMesa.resources
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Procesos.Frm_Cierres_turnos.resources

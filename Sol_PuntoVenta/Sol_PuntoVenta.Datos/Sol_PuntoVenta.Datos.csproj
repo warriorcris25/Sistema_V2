@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Conexion.cs" />
     <Compile Include="D_Area_Despacho.cs" />
+    <Compile Include="D_Cierre_Turnos.cs" />
     <Compile Include="D_Familias.cs" />
     <Compile Include="D_Marcas.cs" />
     <Compile Include="D_Mesas.cs" />

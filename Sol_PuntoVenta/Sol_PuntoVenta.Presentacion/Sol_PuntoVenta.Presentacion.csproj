@@ -131,6 +131,12 @@
     <Compile Include="Frm_Unidades_Medidas.Designer.cs">
       <DependentUpon>Frm_Unidades_Medidas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\Frm_Cierres_turnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Frm_Cierres_turnos.Designer.cs">
+      <DependentUpon>Frm_Cierres_turnos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\Frm_Registro_Pedidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Unidades_Medidas.resx">
       <DependentUpon>Frm_Unidades_Medidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Frm_Cierres_turnos.resx">
+      <DependentUpon>Frm_Cierres_turnos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\Frm_Registro_Pedidos.resx">
       <DependentUpon>Frm_Registro_Pedidos.cs</DependentUpon>
