@@ -78,8 +78,7 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más 
 
 ## Autores
 
-- **Tu Nombre** - *Desarrollador Principal* - Tu Perfil de GitHub
-- **Colaborador 1** - *Contribuciones Adicionales* - Perfil de GitHub
+- Cristian Julian Guerrero Pacagui - *Desarrollador Principal* - warriorcris25
 
 ---
 
