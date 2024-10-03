@@ -16,7 +16,7 @@ namespace Sol_PuntoVenta.Presentacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_DashBoard());
+            Application.Run(new Procesos.Frm_Mesa_Abierta());
         }
     }
 }

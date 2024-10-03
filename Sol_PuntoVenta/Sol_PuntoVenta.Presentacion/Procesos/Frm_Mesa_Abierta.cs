@@ -16,5 +16,6 @@ namespace Sol_PuntoVenta.Presentacion.Procesos
         {
             InitializeComponent();
         }
+
     }
 }

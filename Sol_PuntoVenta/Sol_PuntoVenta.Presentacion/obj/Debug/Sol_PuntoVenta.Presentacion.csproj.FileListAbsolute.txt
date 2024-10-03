@@ -87,3 +87,4 @@ D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Prese
 D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Controles.MiMesa.resources
 D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Procesos.Frm_Cierres_turnos.resources
 D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_Punt.031ED3A1.Up2Date
+D:\crist\Documents\GitHub\CursoC#\Sistema_V2\Sol_PuntoVenta\Sol_PuntoVenta.Presentacion\obj\Debug\Sol_PuntoVenta.Presentacion.Procesos.Frm_Mesa_Abierta.resources
