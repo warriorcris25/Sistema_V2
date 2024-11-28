@@ -195,7 +195,7 @@ namespace Sol_PuntoVenta.Presentacion.Procesos
                     if (Rpta.Equals("Ok"))
                     {
                         this.Estado_gestion_turno_pv(this.nCodigo_pv);
-                        MessageBox.Show("El turno hasido cerrado correctamente", "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show("El turno ha sido cerrado correctamente", "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
                     else
                     {

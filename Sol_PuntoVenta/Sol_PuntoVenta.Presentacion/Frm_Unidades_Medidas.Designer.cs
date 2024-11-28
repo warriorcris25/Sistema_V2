@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Unidades_Medidas));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Pnl_titulo_form = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.Btn_Salir = new System.Windows.Forms.Button();
@@ -224,7 +224,7 @@
             this.Btn_Buscar.BackColor = System.Drawing.Color.LightSeaGreen;
             this.Btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Buscar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Buscar.Location = new System.Drawing.Point(377, 50);
+            this.Btn_Buscar.Location = new System.Drawing.Point(391, 50);
             this.Btn_Buscar.Name = "Btn_Buscar";
             this.Btn_Buscar.Size = new System.Drawing.Size(100, 34);
             this.Btn_Buscar.TabIndex = 3;
@@ -234,7 +234,7 @@
             // 
             // Txt_Buscar
             // 
-            this.Txt_Buscar.Location = new System.Drawing.Point(81, 55);
+            this.Txt_Buscar.Location = new System.Drawing.Point(95, 55);
             this.Txt_Buscar.Name = "Txt_Buscar";
             this.Txt_Buscar.Size = new System.Drawing.Size(267, 22);
             this.Txt_Buscar.TabIndex = 2;
@@ -253,20 +253,20 @@
             this.Dgv_Listado.AllowUserToAddRows = false;
             this.Dgv_Listado.AllowUserToDeleteRows = false;
             this.Dgv_Listado.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightCyan;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.Dgv_Listado.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightCyan;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            this.Dgv_Listado.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.Dgv_Listado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Dgv_Listado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.Dgv_Listado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(145)))), ((int)(((byte)(195)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Dgv_Listado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(145)))), ((int)(((byte)(195)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv_Listado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.Dgv_Listado.ColumnHeadersHeight = 35;
             this.Dgv_Listado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.Dgv_Listado.EnableHeadersVisualStyles = false;

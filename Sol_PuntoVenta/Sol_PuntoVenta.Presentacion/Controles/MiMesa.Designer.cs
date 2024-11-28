@@ -53,52 +53,58 @@
             this.Pnl_mesa.Controls.Add(this.Lbl_descricipcion_me);
             this.Pnl_mesa.Controls.Add(this.Pct_estado);
             this.Pnl_mesa.Controls.Add(this.Pct_imagenmesa);
-            this.Pnl_mesa.Location = new System.Drawing.Point(5, 9);
+            this.Pnl_mesa.Location = new System.Drawing.Point(4, 7);
+            this.Pnl_mesa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Pnl_mesa.Name = "Pnl_mesa";
-            this.Pnl_mesa.Size = new System.Drawing.Size(165, 173);
+            this.Pnl_mesa.Size = new System.Drawing.Size(124, 141);
             this.Pnl_mesa.TabIndex = 0;
             // 
             // Lbl_codigo_tu
             // 
-            this.Lbl_codigo_tu.Location = new System.Drawing.Point(129, 97);
+            this.Lbl_codigo_tu.Location = new System.Drawing.Point(97, 79);
+            this.Lbl_codigo_tu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_codigo_tu.Name = "Lbl_codigo_tu";
-            this.Lbl_codigo_tu.Size = new System.Drawing.Size(33, 24);
+            this.Lbl_codigo_tu.Size = new System.Drawing.Size(25, 20);
             this.Lbl_codigo_tu.TabIndex = 7;
             this.Lbl_codigo_tu.Text = "Lbl_codigo_tu";
             this.Lbl_codigo_tu.Visible = false;
             // 
             // Lbl_codigo_us
             // 
-            this.Lbl_codigo_us.Location = new System.Drawing.Point(129, 62);
+            this.Lbl_codigo_us.Location = new System.Drawing.Point(97, 50);
+            this.Lbl_codigo_us.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_codigo_us.Name = "Lbl_codigo_us";
-            this.Lbl_codigo_us.Size = new System.Drawing.Size(33, 24);
+            this.Lbl_codigo_us.Size = new System.Drawing.Size(25, 20);
             this.Lbl_codigo_us.TabIndex = 6;
             this.Lbl_codigo_us.Text = "Lbl_codigo_us";
             this.Lbl_codigo_us.Visible = false;
             // 
             // Lbl_descripcion_pv
             // 
-            this.Lbl_descripcion_pv.Location = new System.Drawing.Point(131, 34);
+            this.Lbl_descripcion_pv.Location = new System.Drawing.Point(98, 28);
+            this.Lbl_descripcion_pv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_descripcion_pv.Name = "Lbl_descripcion_pv";
-            this.Lbl_descripcion_pv.Size = new System.Drawing.Size(31, 24);
+            this.Lbl_descripcion_pv.Size = new System.Drawing.Size(23, 20);
             this.Lbl_descripcion_pv.TabIndex = 5;
             this.Lbl_descripcion_pv.Text = "Lbl_descripcion_pv";
             this.Lbl_descripcion_pv.Visible = false;
             // 
             // Lbl_codigo_pv
             // 
-            this.Lbl_codigo_pv.Location = new System.Drawing.Point(128, 2);
+            this.Lbl_codigo_pv.Location = new System.Drawing.Point(96, 2);
+            this.Lbl_codigo_pv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_codigo_pv.Name = "Lbl_codigo_pv";
-            this.Lbl_codigo_pv.Size = new System.Drawing.Size(36, 27);
+            this.Lbl_codigo_pv.Size = new System.Drawing.Size(27, 22);
             this.Lbl_codigo_pv.TabIndex = 4;
             this.Lbl_codigo_pv.Text = "Lbl_codigo_pv";
             this.Lbl_codigo_pv.Visible = false;
             // 
             // Lbl_codigo_me
             // 
-            this.Lbl_codigo_me.Location = new System.Drawing.Point(3, 2);
+            this.Lbl_codigo_me.Location = new System.Drawing.Point(2, 2);
+            this.Lbl_codigo_me.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_codigo_me.Name = "Lbl_codigo_me";
-            this.Lbl_codigo_me.Size = new System.Drawing.Size(36, 27);
+            this.Lbl_codigo_me.Size = new System.Drawing.Size(27, 22);
             this.Lbl_codigo_me.TabIndex = 3;
             this.Lbl_codigo_me.Text = "Lbl_codigo_me";
             this.Lbl_codigo_me.Visible = false;
@@ -106,9 +112,10 @@
             // Lbl_descricipcion_me
             // 
             this.Lbl_descricipcion_me.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_descricipcion_me.Location = new System.Drawing.Point(3, 145);
+            this.Lbl_descricipcion_me.Location = new System.Drawing.Point(2, 118);
+            this.Lbl_descricipcion_me.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_descricipcion_me.Name = "Lbl_descricipcion_me";
-            this.Lbl_descricipcion_me.Size = new System.Drawing.Size(159, 26);
+            this.Lbl_descricipcion_me.Size = new System.Drawing.Size(119, 21);
             this.Lbl_descricipcion_me.TabIndex = 2;
             this.Lbl_descricipcion_me.Text = "Mesa X";
             this.Lbl_descricipcion_me.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -116,9 +123,10 @@
             // Pct_estado
             // 
             this.Pct_estado.Image = ((System.Drawing.Image)(resources.GetObject("Pct_estado.Image")));
-            this.Pct_estado.Location = new System.Drawing.Point(61, 9);
+            this.Pct_estado.Location = new System.Drawing.Point(46, 7);
+            this.Pct_estado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Pct_estado.Name = "Pct_estado";
-            this.Pct_estado.Size = new System.Drawing.Size(31, 30);
+            this.Pct_estado.Size = new System.Drawing.Size(23, 24);
             this.Pct_estado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pct_estado.TabIndex = 1;
             this.Pct_estado.TabStop = false;
@@ -127,20 +135,23 @@
             // 
             this.Pct_imagenmesa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Pct_imagenmesa.Image = ((System.Drawing.Image)(resources.GetObject("Pct_imagenmesa.Image")));
-            this.Pct_imagenmesa.Location = new System.Drawing.Point(24, 30);
+            this.Pct_imagenmesa.Location = new System.Drawing.Point(18, 24);
+            this.Pct_imagenmesa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Pct_imagenmesa.Name = "Pct_imagenmesa";
-            this.Pct_imagenmesa.Size = new System.Drawing.Size(104, 111);
+            this.Pct_imagenmesa.Size = new System.Drawing.Size(78, 90);
             this.Pct_imagenmesa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pct_imagenmesa.TabIndex = 0;
             this.Pct_imagenmesa.TabStop = false;
+            this.Pct_imagenmesa.Click += new System.EventHandler(this.Pct_imagenmesa_Click);
             // 
             // MiMesa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.Pnl_mesa);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MiMesa";
-            this.Size = new System.Drawing.Size(175, 187);
+            this.Size = new System.Drawing.Size(131, 152);
             this.Pnl_mesa.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Pct_estado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pct_imagenmesa)).EndInit();

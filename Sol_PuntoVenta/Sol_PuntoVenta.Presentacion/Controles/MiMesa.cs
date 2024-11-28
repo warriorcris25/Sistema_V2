@@ -60,5 +60,15 @@ namespace Sol_PuntoVenta.Presentacion.Controles
             set { Lbl_codigo_tu.Text = Convert.ToString(value); }
         }
         #endregion
+
+        private void Pct_imagenmesa_Click(object sender, EventArgs e)
+        {
+            Procesos.Frm_Mesa_Abierta oFrm_mesaabierta = new Procesos.Frm_Mesa_Abierta();
+            oFrm_mesaabierta.Txt_mesaseleccionada.Text = Descripcion;
+            oFrm_mesaabierta.Txt_puntoventa.Text = Descripcion_pv;
+            oFrm_mesaabierta.Btn_nuevopedido.Focus();
+            oFrm_mesaabierta.ShowDialog();
+
+        }
     }
 }
