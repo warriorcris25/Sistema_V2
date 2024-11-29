@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "D:\\crist\\Documents\\GitHub\\CursoC#\\Sistema_V2\\Sol_PuntoVenta\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{14969CD3-E368-45BE-BAD3-41EB02399DBE}|Sol_PuntoVenta.Presentacion\\Sol_PuntoVenta.Presentacion.csproj|d:\\crist\\documents\\github\\cursoc#\\sistema_v2\\sol_puntoventa\\sol_puntoventa.presentacion\\controles\\mimesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{14969CD3-E368-45BE-BAD3-41EB02399DBE}|Sol_PuntoVenta.Presentacion\\Sol_PuntoVenta.Presentacion.csproj|solutionrelative:sol_puntoventa.presentacion\\controles\\mimesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{14969CD3-E368-45BE-BAD3-41EB02399DBE}|Sol_PuntoVenta.Presentacion\\Sol_PuntoVenta.Presentacion.csproj|d:\\crist\\documents\\github\\cursoc#\\sistema_v2\\sol_puntoventa\\sol_puntoventa.presentacion\\controles\\miproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{14969CD3-E368-45BE-BAD3-41EB02399DBE}|Sol_PuntoVenta.Presentacion\\Sol_PuntoVenta.Presentacion.csproj|solutionrelative:sol_puntoventa.presentacion\\controles\\miproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14969CD3-E368-45BE-BAD3-41EB02399DBE}|Sol_PuntoVenta.Presentacion\\Sol_PuntoVenta.Presentacion.csproj|d:\\crist\\documents\\github\\cursoc#\\sistema_v2\\sol_puntoventa\\sol_puntoventa.presentacion\\procesos\\frm_mesa_abierta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{14969CD3-E368-45BE-BAD3-41EB02399DBE}|Sol_PuntoVenta.Presentacion\\Sol_PuntoVenta.Presentacion.csproj|solutionrelative:sol_puntoventa.presentacion\\procesos\\frm_mesa_abierta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA5465B7-2D67-447C-AD08-F05C561D3349}|Sol_PuntoVenta.Datos\\Sol_PuntoVenta.Datos.csproj|d:\\crist\\documents\\github\\cursoc#\\sistema_v2\\sol_puntoventa\\sol_puntoventa.datos\\d_mesaabierta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA5465B7-2D67-447C-AD08-F05C561D3349}|Sol_PuntoVenta.Datos\\Sol_PuntoVenta.Datos.csproj|solutionrelative:sol_puntoventa.datos\\d_mesaabierta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6C626A9-7A78-4145-9D08-2DF47DA8BF17}|Sol_PuntoVenta.Negocio\\Sol_PuntoVenta.Negocio.csproj|d:\\crist\\documents\\github\\cursoc#\\sistema_v2\\sol_puntoventa\\sol_puntoventa.negocio\\n_mesaabierta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6C626A9-7A78-4145-9D08-2DF47DA8BF17}|Sol_PuntoVenta.Negocio\\Sol_PuntoVenta.Negocio.csproj|solutionrelative:sol_puntoventa.negocio\\n_mesaabierta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{14969CD3-E368-45BE-BAD3-41EB02399DBE}|Sol_PuntoVenta.Presentacion\\Sol_PuntoVenta.Presentacion.csproj|D:\\crist\\Documents\\GitHub\\CursoC#\\Sistema_V2\\Sol_PuntoVenta\\sol_puntoventa.presentacion\\controles\\mimesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14969CD3-E368-45BE-BAD3-41EB02399DBE}|Sol_PuntoVenta.Presentacion\\Sol_PuntoVenta.Presentacion.csproj|solutionrelative:sol_puntoventa.presentacion\\controles\\mimesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14969CD3-E368-45BE-BAD3-41EB02399DBE}|Sol_PuntoVenta.Presentacion\\Sol_PuntoVenta.Presentacion.csproj|D:\\crist\\Documents\\GitHub\\CursoC#\\Sistema_V2\\Sol_PuntoVenta\\sol_puntoventa.presentacion\\frm_unidades_medidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{14969CD3-E368-45BE-BAD3-41EB02399DBE}|Sol_PuntoVenta.Presentacion\\Sol_PuntoVenta.Presentacion.csproj|solutionrelative:sol_puntoventa.presentacion\\frm_unidades_medidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14969CD3-E368-45BE-BAD3-41EB02399DBE}|Sol_PuntoVenta.Presentacion\\Sol_PuntoVenta.Presentacion.csproj|D:\\crist\\Documents\\GitHub\\CursoC#\\Sistema_V2\\Sol_PuntoVenta\\sol_puntoventa.presentacion\\procesos\\frm_mesa_abierta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{14969CD3-E368-45BE-BAD3-41EB02399DBE}|Sol_PuntoVenta.Presentacion\\Sol_PuntoVenta.Presentacion.csproj|solutionrelative:sol_puntoventa.presentacion\\procesos\\frm_mesa_abierta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14969CD3-E368-45BE-BAD3-41EB02399DBE}|Sol_PuntoVenta.Presentacion\\Sol_PuntoVenta.Presentacion.csproj|D:\\crist\\Documents\\GitHub\\CursoC#\\Sistema_V2\\Sol_PuntoVenta\\sol_puntoventa.presentacion\\frm_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{14969CD3-E368-45BE-BAD3-41EB02399DBE}|Sol_PuntoVenta.Presentacion\\Sol_PuntoVenta.Presentacion.csproj|solutionrelative:sol_puntoventa.presentacion\\frm_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{14969CD3-E368-45BE-BAD3-41EB02399DBE}|Sol_PuntoVenta.Presentacion\\Sol_PuntoVenta.Presentacion.csproj|D:\\crist\\Documents\\GitHub\\CursoC#\\Sistema_V2\\Sol_PuntoVenta\\sol_puntoventa.presentacion\\controles\\mimesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{14969CD3-E368-45BE-BAD3-41EB02399DBE}|Sol_PuntoVenta.Presentacion\\Sol_PuntoVenta.Presentacion.csproj|solutionrelative:sol_puntoventa.presentacion\\controles\\mimesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,31 +42,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Frm_Unidades_Medidas.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\crist\\Documents\\GitHub\\CursoC#\\Sistema_V2\\Sol_PuntoVenta\\Sol_PuntoVenta.Presentacion\\Frm_Unidades_Medidas.cs",
-              "RelativeDocumentMoniker": "Sol_PuntoVenta.Presentacion\\Frm_Unidades_Medidas.cs",
-              "ToolTip": "D:\\crist\\Documents\\GitHub\\CursoC#\\Sistema_V2\\Sol_PuntoVenta\\Sol_PuntoVenta.Presentacion\\Frm_Unidades_Medidas.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Sol_PuntoVenta.Presentacion\\Frm_Unidades_Medidas.cs [Dise\u00F1o]",
+              "DocumentIndex": 0,
+              "Title": "MiProducto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\crist\\Documents\\GitHub\\CursoC#\\Sistema_V2\\Sol_PuntoVenta\\Sol_PuntoVenta.Presentacion\\Controles\\MiProducto.cs",
+              "RelativeDocumentMoniker": "Sol_PuntoVenta.Presentacion\\Controles\\MiProducto.cs",
+              "ToolTip": "D:\\crist\\Documents\\GitHub\\CursoC#\\Sistema_V2\\Sol_PuntoVenta\\Sol_PuntoVenta.Presentacion\\Controles\\MiProducto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Sol_PuntoVenta.Presentacion\\Controles\\MiProducto.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T14:18:17.502Z"
+              "WhenOpened": "2024-11-28T23:58:33.642Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "N_MesaAbierta.cs",
+              "DocumentMoniker": "D:\\crist\\Documents\\GitHub\\CursoC#\\Sistema_V2\\Sol_PuntoVenta\\Sol_PuntoVenta.Negocio\\N_MesaAbierta.cs",
+              "RelativeDocumentMoniker": "Sol_PuntoVenta.Negocio\\N_MesaAbierta.cs",
+              "ToolTip": "D:\\crist\\Documents\\GitHub\\CursoC#\\Sistema_V2\\Sol_PuntoVenta\\Sol_PuntoVenta.Negocio\\N_MesaAbierta.cs",
+              "RelativeToolTip": "Sol_PuntoVenta.Negocio\\N_MesaAbierta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T21:40:02.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "D_MesaAbierta.cs",
+              "DocumentMoniker": "D:\\crist\\Documents\\GitHub\\CursoC#\\Sistema_V2\\Sol_PuntoVenta\\Sol_PuntoVenta.Datos\\D_MesaAbierta.cs",
+              "RelativeDocumentMoniker": "Sol_PuntoVenta.Datos\\D_MesaAbierta.cs",
+              "ToolTip": "D:\\crist\\Documents\\GitHub\\CursoC#\\Sistema_V2\\Sol_PuntoVenta\\Sol_PuntoVenta.Datos\\D_MesaAbierta.cs",
+              "RelativeToolTip": "Sol_PuntoVenta.Datos\\D_MesaAbierta.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAiwB8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T21:34:01.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MiMesa.cs",
               "DocumentMoniker": "D:\\crist\\Documents\\GitHub\\CursoC#\\Sistema_V2\\Sol_PuntoVenta\\Sol_PuntoVenta.Presentacion\\Controles\\MiMesa.cs",
               "RelativeDocumentMoniker": "Sol_PuntoVenta.Presentacion\\Controles\\MiMesa.cs",
               "ToolTip": "D:\\crist\\Documents\\GitHub\\CursoC#\\Sistema_V2\\Sol_PuntoVenta\\Sol_PuntoVenta.Presentacion\\Controles\\MiMesa.cs",
               "RelativeToolTip": "Sol_PuntoVenta.Presentacion\\Controles\\MiMesa.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAADgv0QAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAwwEgAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T17:04:45.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "MiMesa.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\crist\\Documents\\GitHub\\CursoC#\\Sistema_V2\\Sol_PuntoVenta\\Sol_PuntoVenta.Presentacion\\Controles\\MiMesa.cs",
               "RelativeDocumentMoniker": "Sol_PuntoVenta.Presentacion\\Controles\\MiMesa.cs",
@@ -74,25 +105,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Frm_Mesa_Abierta.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\crist\\Documents\\GitHub\\CursoC#\\Sistema_V2\\Sol_PuntoVenta\\Sol_PuntoVenta.Presentacion\\Procesos\\Frm_Mesa_Abierta.cs",
               "RelativeDocumentMoniker": "Sol_PuntoVenta.Presentacion\\Procesos\\Frm_Mesa_Abierta.cs",
               "ToolTip": "D:\\crist\\Documents\\GitHub\\CursoC#\\Sistema_V2\\Sol_PuntoVenta\\Sol_PuntoVenta.Presentacion\\Procesos\\Frm_Mesa_Abierta.cs [Dise\u00F1o]",
               "RelativeToolTip": "Sol_PuntoVenta.Presentacion\\Procesos\\Frm_Mesa_Abierta.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T17:03:44.096Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Frm_DashBoard.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\crist\\Documents\\GitHub\\CursoC#\\Sistema_V2\\Sol_PuntoVenta\\Sol_PuntoVenta.Presentacion\\Frm_DashBoard.cs",
-              "RelativeDocumentMoniker": "Sol_PuntoVenta.Presentacion\\Frm_DashBoard.cs",
-              "ToolTip": "D:\\crist\\Documents\\GitHub\\CursoC#\\Sistema_V2\\Sol_PuntoVenta\\Sol_PuntoVenta.Presentacion\\Frm_DashBoard.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Sol_PuntoVenta.Presentacion\\Frm_DashBoard.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T14:09:54.077Z"
+              "WhenOpened": "2024-10-17T17:03:44.096Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

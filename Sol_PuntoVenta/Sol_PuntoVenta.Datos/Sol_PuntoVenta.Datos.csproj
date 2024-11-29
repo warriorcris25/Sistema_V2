@@ -46,6 +46,7 @@
     <Compile Include="D_Cierre_Turnos.cs" />
     <Compile Include="D_Familias.cs" />
     <Compile Include="D_Marcas.cs" />
+    <Compile Include="D_MesaAbierta.cs" />
     <Compile Include="D_Mesas.cs" />
     <Compile Include="D_Productos.cs" />
     <Compile Include="D_Punto_Venta.cs" />

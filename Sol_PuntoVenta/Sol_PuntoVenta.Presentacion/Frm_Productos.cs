@@ -212,10 +212,10 @@ namespace Sol_PuntoVenta.Presentacion
 
             Dgv_PuntosVentas.DataSource = this.Dtdetalle;
 
-            Dgv_PuntosVentas.Columns[0].Width = 250;
+            Dgv_PuntosVentas.Columns[0].Width = 200;
             Dgv_PuntosVentas.Columns[0].HeaderText = "PUNTO DE VENTA";
             Dgv_PuntosVentas.Columns[0].ReadOnly = true;
-            Dgv_PuntosVentas.Columns[1].Width = 100;
+            Dgv_PuntosVentas.Columns[1].Width = 80;
             Dgv_PuntosVentas.Columns[1].HeaderText = "OK";
             Dgv_PuntosVentas.Columns[1].ReadOnly = true;
             Dgv_PuntosVentas.Columns[2].Visible = false;
@@ -369,7 +369,7 @@ namespace Sol_PuntoVenta.Presentacion
             this.Estado_BotonesProcesos(true);
             this.Limpia_Texto();
             this.Estado_Texto(true);
-            this.Puntos_Ventas_OK(this.Estadoguarda, this.nCodigo);
+            this.Puntos_Ventas_OK(this.Estadoguarda, 0);
             this.Mostrar_img_prod_pred();
             this.nCodigo = 0;
             this.nCodigo_ma = 0;

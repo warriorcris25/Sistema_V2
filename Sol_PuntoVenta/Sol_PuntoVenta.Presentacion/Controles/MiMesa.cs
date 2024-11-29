@@ -67,6 +67,10 @@ namespace Sol_PuntoVenta.Presentacion.Controles
             oFrm_mesaabierta.Txt_mesaseleccionada.Text = Descripcion;
             oFrm_mesaabierta.Txt_puntoventa.Text = Descripcion_pv;
             oFrm_mesaabierta.Btn_nuevopedido.Focus();
+            oFrm_mesaabierta.Dgv_listado_sf.DataSource = N_MesaAbierta.Listar_SubFamilias_RP(Codigo_pv); //Dando formato al datagridview de subfamilia
+            oFrm_mesaabierta.Dgv_listado_sf.Columns[0].Width = 250;
+            oFrm_mesaabierta.Dgv_listado_sf.Columns[0].HeaderText = "SUBFAMILIAS";
+            oFrm_mesaabierta.Dgv_listado_sf.Columns[1].Visible = false;
             oFrm_mesaabierta.ShowDialog();
 
         }

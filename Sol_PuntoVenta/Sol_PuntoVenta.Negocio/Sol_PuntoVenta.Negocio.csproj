@@ -45,6 +45,7 @@
     <Compile Include="N_Cierres_Turnos.cs" />
     <Compile Include="N_Familias.cs" />
     <Compile Include="N_Marcas.cs" />
+    <Compile Include="N_MesaAbierta.cs" />
     <Compile Include="N_Mesas.cs" />
     <Compile Include="N_Productos.cs" />
     <Compile Include="N_Punto_Venta.cs" />
